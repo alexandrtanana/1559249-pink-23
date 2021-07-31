@@ -14,7 +14,7 @@
     "sass": "1.37.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10",
-    "w3c-html-validator": "^0.7.9"
+    "w3c-html-validator": "0.7.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
