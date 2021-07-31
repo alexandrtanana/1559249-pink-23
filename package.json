@@ -7,10 +7,11 @@
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "gulp": "4.0.2",
-    "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "5.0.0",
+    "normalize.css": "^8.0.1",
     "postcss": "8.2.8",
+    "sass": "1.37.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
   },
@@ -18,7 +19,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
