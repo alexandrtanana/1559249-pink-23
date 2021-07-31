@@ -1,14 +1,14 @@
-const gulp = require("gulp");
+const { src, dest } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const { style } = require("./_const");
 
 const styles = () => {
-  return gulp
-    .src("source/sass/style.scss", { sourcemaps: true })
+  return src(style.main, { sourcemaps: true })
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest("source/css", { sourcemaps: "." }))
+    .pipe(dest(style.dest, { sourcemaps: "." }));
 };
 
 module.exports = styles;
