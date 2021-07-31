@@ -1,28 +1,18 @@
-@import "css/style.css";
-@import "page.scss";
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "page-main.scss";
-@import "text.scss";
-@import "desc.scss";
-@import "slider-review.scss";
-@import "table-slider.scss";
-@import "contacts.scss";
-@import "page-footer.scss";
-@import "competition.scss";
-@import "form.scss";
-@import "important.scss";
-@import "galery.scss";
-@import "newphoto.scss";
-
-.page__body {
-  font-family: "Open Sans", sans-serif;
-  background-position: top center;
-  min-height: 100%;
-  width: 320px;
-  margin: 0 auto;
-  height: auto;
-}
+@import "includes/page.scss";
+@import "includes/page-header.scss";
+@import "includes/main-nav.scss";
+@import "includes/page-main.scss";
+@import "includes/text.scss";
+@import "includes/desc.scss";
+@import "includes/slider-review.scss";
+@import "includes/table-slider.scss";
+@import "includes/contacts.scss";
+@import "includes/page-footer.scss";
+@import "includes/competition.scss";
+@import "includes/form.scss";
+@import "includes/important.scss";
+@import "includes/galery.scss";
+@import "includes/newphoto.scss";
 
 .visually-hidden {
   display: none;
