@@ -2,7 +2,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #d22856;
+  color: $accent;
   text-transform: uppercase;
   padding-left: 43px;
 }
@@ -29,7 +29,7 @@
 }
 
 .form__checkbox-title {
-  color: #d22856;
+  color: $accent;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -50,7 +50,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #d22856;
+  color: $accent;
   text-transform: uppercase;
 }
 
@@ -70,7 +70,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #d22856;
+  color: $accent;
   text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #d22856;
+  color: $accent;
   text-transform: uppercase;
 }
 
@@ -114,7 +114,7 @@
 
 .form__button-send {
   background-color: #2aab6d;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
   border: none;
   cursor: pointer;

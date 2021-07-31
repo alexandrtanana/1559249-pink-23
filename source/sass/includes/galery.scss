@@ -3,7 +3,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  color: #ffffff;
+  color: $white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,7 +32,7 @@
   font-size: 12px;
   line-height: 2;
   text-transform: uppercase;
-  color: #d22856;
+  color: $accent;
   display: flex;
   padding: 0;
   border: none;

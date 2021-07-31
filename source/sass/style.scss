@@ -1,5 +1,7 @@
 @use "../../node_modules/normalize.css/normalize.css";
-@use "includes/visually-hidden.scss";
+
+@import "common/variables.scss";
+@import "common/visually-hidden.scss";
 
 @import "includes/page.scss";
 @import "includes/page-header.scss";

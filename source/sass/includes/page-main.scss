@@ -8,7 +8,7 @@
 }
 
 .page-main__download {
-  color: #ffffff;
+  color: $white;
   line-height: 18px;
   text-decoration: none;
   display: flex;
@@ -31,7 +31,7 @@
 
 .page-main__title {
   font-weight: 300;
-  color: #ffffff;
+  color: $white;
   line-height: 29px;
   margin-left: 20px;
   margin-right: 20px;
@@ -39,7 +39,7 @@
 }
 
 .page-main__desc {
-  color: #ffffff;
+  color: $white;
   line-height: 24px;
   margin: 0;
   padding: 0;
