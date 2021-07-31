@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,qBAAqB,CAAA;EACnB,KAAK,EAAC,OAAO;EACb,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAMlB;;AATD,AAIE,qBAJmB,CAInB,wBAAwB,CAAA;EACtB,KAAK,EAAC,OAAO;EACb,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAClB",
-    "sources": [
-        "slider-review.scss"
-    ],
-    "names": [],
-    "file": "slider-review.css"
-}
