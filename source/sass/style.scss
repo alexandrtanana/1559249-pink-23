@@ -1,3 +1,6 @@
+@use "../../node_modules/normalize.css/normalize.css";
+@use "includes/visually-hidden.scss";
+
 @import "includes/page.scss";
 @import "includes/page-header.scss";
 @import "includes/main-nav.scss";
@@ -14,6 +17,4 @@
 @import "includes/galery.scss";
 @import "includes/newphoto.scss";
 
-.visually-hidden {
-  display: none;
-}
+
