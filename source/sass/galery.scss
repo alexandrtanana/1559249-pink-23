@@ -1,0 +1,46 @@
+.galery__title{
+  background-image:url(..//img/backmobile.jpg);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 102px;
+  padding-bottom: 84px;
+}
+
+.galery__text{
+  background-color: #F2F2F2;
+}
+
+.galery__text-name{
+  padding-left: 20px;
+}
+
+.galery__subtitle{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.galery__like{
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #d22856;
+  display: flex;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.galery__like-img{
+  padding-right: 18px;
+
+}

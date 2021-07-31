@@ -1,0 +1,133 @@
+.form__competition-label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color:#D22856;
+  text-transform: uppercase;
+  padding-left: 43px;
+}
+
+.form__competition-fulname{
+  height: 59px;
+  width: 276px;
+  border: 2px solid #E5E5E5;
+  border-radius: 2px;
+  color:#283645;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
+  margin-left: 22px;
+  margin-right: 20px;
+}
+
+
+.form__checkbox{
+  background-color:#F2F2F2;
+  margin: 0;
+  padding: 0;
+}
+
+.form__checkbox-title{
+  color:#D22856;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 51px;
+  padding-right: 51px;
+  text-transform: uppercase;
+}
+
+.form__checkbox-list{
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color:#283645;
+}
+
+.form__contacts-label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color:#D22856;
+  text-transform: uppercase;
+}
+
+.form__contacts-text{
+  border: 2px solid #E5E5E5;
+  border-radius: 2px;
+  width: 276px;
+  height: 59px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
+  color:#283645;
+}
+
+.form__radio-text{
+  outline: 2px solid rgb(255, 94, 0);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #D22856;
+  text-transform: uppercase;
+}
+
+.form__radio{
+  background-color:#F2F2F2;
+}
+
+.form__radio-item{
+  outline: 2px solid rgb(255, 94, 0);
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__review-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color:#D22856;
+  text-transform: uppercase;
+}
+
+.form__review-desc{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color:#283645;
+}
+
+
+.form__review-textarea{
+  width: 276px;
+  height: 197px;
+  border: 2px solid #E5E5E5;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form__button-send{
+  background-color:#2AAB6D;
+  color:#FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #606160;
+  border-radius: 2px;
+
+}
