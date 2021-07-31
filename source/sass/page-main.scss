@@ -1,14 +1,13 @@
-.page-main__operating{
-  background-color:#1D2631;
+.page-main__operating {
+  background-color: #1d2631;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
-.page-main__download{
+.page-main__download {
   color:#FFFFFF;
   line-height: 18px;
   text-decoration: none;
@@ -19,28 +18,28 @@
   margin-bottom: 59px;
 }
 
-.page-main__operating-system{
+.page-main__operating-system {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.page-main__wrap{
-  background-image:url(..//img/backmobile.jpg);
+.page-main__wrap {
+  background-image: url(..//img/backmobile.jpg);
   height: 462px;
 }
 
-.page-main__title{
+.page-main__title {
   font-weight: 300;
-  color:#FFFFFF;
+  color: #ffffff;
   line-height: 28,8px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 34px;
 }
 
-.page-main__desc{
-  color:#FFFFFF;
+.page-main__desc {
+  color: #ffffff;
   line-height: 24px;
   margin: 0;
   padding: 0;
