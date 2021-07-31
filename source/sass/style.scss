@@ -1,7 +1,4 @@
-
 @import "css/style.css";
-
-
 @import "page.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
@@ -18,13 +15,11 @@
 @import "galery.scss";
 @import "newphoto.scss";
 
-
 .page__body {
   background-position: top center;
   min-height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'sans-serif';
   width: 320px;
-  min-height: 100%;
   margin: 0 auto;
   height: auto;
 }
