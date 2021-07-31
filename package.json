@@ -13,12 +13,13 @@
     "postcss": "8.2.8",
     "sass": "1.37.0",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "stylelint-config-htmlacademy": "0.1.10",
+    "w3c-html-validator": "^0.7.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint && w3c-html-validator source",
     "build": "gulp build",
     "start": "gulp"
   },
