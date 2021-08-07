@@ -10,10 +10,13 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo"></a>
-    <img src="img/pinklogo.svg" width="74" height="23" alt="логотип пинк">
+    <div class="page-header__nav">
+      <a class="page-header__logo">
+        <img src="img/pinklogo.svg" width="74" height="23" alt="логотип пинк">
+      </a>
+      <button class="page-header__toggle" type="button"><span class="page-header__button">Открыть меню</span></button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -138,7 +141,7 @@
     </div>
     <div class="newphoto">
       <form class="newphoto__form" action="https://echo.htmlacademy.ru" method="POST">
-        <a class="newphoto__link" href="#"><img class="newphoto__photo" src="img/photo7tablet.jpg"
+        <a class="newphoto__img" href="#"><img class="newphoto__photo" src="img/photo7tablet.jpg"
             alt="морозная зима"></a>
         <p class="newphoto__button">
           <button class="newphoto__button-editor" type="button"><img src="img/crop.svg" width="44" height="44"
@@ -149,12 +152,14 @@
               alt="контраст"></button>
         </p>
         <input class="newphoto__range" type="range" min="0" max="100" step="1" value="50">
-        <p>
-          <input class="newphoto__add" type="submit" value="Запостить">
-        </p>
-        <p>
-          <input class="newphoto__cancellation" type="reset" value="Отмена">
-        </p>
+        <div class="newphoto__button-input">
+          <p>
+            <input class="newphoto__add" type="submit" value="Запостить">
+          </p>
+          <p>
+            <input class="newphoto__cancellation" type="reset" value="Отмена">
+          </p>
+        </div>
       </form>
     </div>
   </main>

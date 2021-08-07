@@ -1,29 +1,18 @@
-@import "css/style.css";
-@import "page.scss";
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "page-main.scss";
-@import "text.scss";
-@import "desc.scss";
-@import "slider-review.scss";
-@import "table-slider.scss";
-@import "contacts.scss";
-@import "page-footer.scss";
-@import "competition.scss";
-@import "form.scss";
-@import "important.scss";
-@import "galery.scss";
-@import "newphoto.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/text.scss";
+@import "blocks/desc.scss";
+@import "blocks/slider-review.scss";
+@import "blocks/table-slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/competition.scss";
+@import "blocks/form.scss";
+@import "blocks/important.scss";
+@import "blocks/galery.scss";
+@import "blocks/newphoto.scss";
 
-.page__body {
-  font-family: "Open Sans", sans-serif;
-  background-position: top center;
-  min-height: 100%;
-  width: 320px;
-  margin: 0 auto;
-  height: auto;
-}
-
-.visually-hidden {
-  display: none;
-}
+/*Global*/
+@import  "global/normalize.scss";

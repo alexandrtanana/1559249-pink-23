@@ -1,0 +1,44 @@
+.newphoto__form {
+  background-color: #f2f2f2;
+}
+
+.newphoto__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.newphoto__add {
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #d22856;
+  text-align: center;
+  padding-left: 91px;
+  padding-right: 90px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.newphoto__cancellation {
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color:#d22856;
+  padding-left: 104px;
+  padding-right: 103px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.newphoto__button-input {
+  text-align: center;
+}
