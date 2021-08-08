@@ -5,8 +5,13 @@
 .competition__text-title {
   padding-top: 120px;
   padding-bottom: 51px;
+<<<<<<< HEAD:source/sass/includes/competition.scss
   padding-left: 46px;
   color: $white;
+=======
+  text-align: center;
+  color: #ffffff;
+>>>>>>> 3ff67fdc442a5a3c03f99b79d6a9eb7d7962cdda:source/sass/blocks/competition.scss
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -17,10 +22,11 @@
   background-color: $white;
   margin: 0;
   padding-top: 64px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 55px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
