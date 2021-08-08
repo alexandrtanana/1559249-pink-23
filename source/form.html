@@ -4,14 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo"></a>
-    <img src="img/pinklogo.svg" width="74" height="23" alt="логотип пинк">
+    <div class="page-header__nav">
+      <a class="page-header__logo">
+        <img src="img/pinklogo.svg" width="74" height="23" alt="логотип пинк">
+      </a>
+      <button class="page-header__toggle" type="button"><span class="page-header__button">Открыть меню</span></button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -41,118 +46,107 @@
     <div class="form">
       <form class="form__competition" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__competition-name">
-          <fieldset>
-            <legend class="visually-hidden">Инициалы</legend>
-            <p><label class="form__competition-label" for="firstname">Фамилия:</label>
-              <input class="form__competition-firstname" type="text" name="firstname" id="firstname"
-                placeholder="Укажите фамилию *"><br>
-            </p>
-            <p><label class="form__competition-label" for="lastname"> Имя:</label>
-              <input class="form__competition-lastname" type="text" name="lastname" id="lastname"
-                placeholder="Введите ваше имя *"><br>
-            </p>
-            <p><label class="form__competition-label" for="patronymic">Отчество:</label>
-              <input class="form__competition-patronymic" type="text" name="patronymic" id="patronymic"
-                placeholder="Ну и отчество тоже"><br>
-            </p>
-          </fieldset>
-          <p class="form__competition-text">Ваши безбашенные достижения в путешествии</p>
+          <p><label class="form__competition-label" for="firstname">Фамилия:</label>
+            <input class="form__competition-fulname" type="text" name="firstname" id="firstname"
+              placeholder="Укажите фамилию *"><br>
+          </p>
+          <p><label class="form__competition-label" for="lastname"> Имя:</label>
+            <input class="form__competition-fulname" type="text" name="lastname" id="lastname"
+              placeholder="Введите ваше имя *"><br>
+          </p>
+          <p><label class="form__competition-label" for="patronymic">Отчество:</label>
+            <input class="form__competition-fulname" type="text" name="patronymic" id="patronymic"
+              placeholder="Ну и отчество тоже"><br>
+          </p>
         </div>
-        <fieldset>
-          <legend class="visually-hidden">Достижения</legend>
-          <div class="form__checkbox">
-            <ul class="form__checkbox-list">
-              <li class="form__checkbox-item">
-                <p><input class="form__checkbox-selfie" type="checkbox" name="achievement" id="selfie"
-                    value="Сделал селфи с акулой" checked>
-                  <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
-                </p>
-              </li>
-              <li class="form__checkbox-item">
-                <p><input class="form__checkbox-tanned" type="checkbox" name="achievement" id="tanned"
-                    value="Обгорел на пляже" checked>
-                  <label class="form__checkbox-label" for="tanned">Обгорел на пляже</label>
-                </p>
-              </li>
-              <li class="form__checkbox-item">
-                <p><input class="form__checkbox-chucknorris" type="checkbox" name="achievement" id="chucknorris"
-                    value="Видел Чака Норриса">
-                  <label class="form__checkbox-label" for="chucknorris">Видел Чака Норриса</label>
-                </p>
-              </li>
-              <li class="form__checkbox-item">
-                <p><input class="form__checkbox-souvenirs" type="checkbox" name="achievement" id="souvenirs"
-                    value="Накупил сувениров">
-                  <label class="form__checkbox-label" for="souvenirs">Накупил сувениров</label>
-                </p>
-              </li>
-              <li class="form__checkbox-item">
-                <p><input class="form__checkbox-tower" type="checkbox" name="achievement" id="tower"
-                    value="Удержал башню" checked>
-                  <label class="form__checkbox-label" for="tower">Удержал башню</label>
-                </p>
-              </li>
-              <li class="form__checkbox-item">
-                <p><input class="form__checkbox-hotel" type="checkbox" name="achievement" id="hotel"
-                    value="Разгромил отель">
-                  <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
-                </p>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
+        <div class="form__checkbox">
+          <p class="form__checkbox-title">Ваши безбашенные достижения в путешествии</p>
+          <ul class="form__checkbox-list">
+            <li class="form__checkbox-item">
+              <p><input class="form__checkbox-selfie" type="checkbox" name="achievement" id="selfie"
+                  value="Сделал селфи с акулой" checked>
+                <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
+              </p>
+            </li>
+            <li class="form__checkbox-item">
+              <p><input class="form__checkbox-tanned" type="checkbox" name="achievement" id="tanned"
+                  value="Обгорел на пляже" checked>
+                <label class="form__checkbox-label" for="tanned">Обгорел на пляже</label>
+              </p>
+            </li>
+            <li class="form__checkbox-item">
+              <p><input class="form__checkbox-chucknorris" type="checkbox" name="achievement" id="chucknorris"
+                  value="Видел Чака Норриса">
+                <label class="form__checkbox-label" for="chucknorris">Видел Чака Норриса</label>
+              </p>
+            </li>
+            <li class="form__checkbox-item">
+              <p><input class="form__checkbox-souvenirs" type="checkbox" name="achievement" id="souvenirs"
+                  value="Накупил сувениров">
+                <label class="form__checkbox-label" for="souvenirs">Накупил сувениров</label>
+              </p>
+            </li>
+            <li class="form__checkbox-item">
+              <p><input class="form__checkbox-tower" type="checkbox" name="achievement" id="tower" value="Удержал башню"
+                  checked>
+                <label class="form__checkbox-label" for="tower">Удержал башню</label>
+              </p>
+            </li>
+            <li class="form__checkbox-item">
+              <p><input class="form__checkbox-hotel" type="checkbox" name="achievement" id="hotel"
+                  value="Разгромил отель">
+                <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
+              </p>
+            </li>
+          </ul>
+        </div>
         <div class="form__contacts">
-          <fieldset>
-            <legend class="visually-hidden">Персональные данные</legend>
-            <p><label class="form__contacts-label" for="phone">Номер телефона</label>
-              <input class="form__contacts-phone" type="tel" name="phone" id="phone" placeholder="Номер,пожалуйста">
-            </p>
-            <p><label class="form__contacts-label" for="email">Адрес почты</label>
-              <input class="form__contacts-email" type="email" name="email" id="email" placeholder="Введите почту *">
-            </p>
-          </fieldset>
+          <p><label class="form__contacts-label" for="phone">Номер телефона</label>
+            <input class="form__contacts-text" type="tel" name="phone" id="phone" placeholder="Номер,пожалуйста">
+          </p>
+          <p><label class="form__contacts-label" for="email">Адрес почты</label>
+            <input class="form__contacts-text" type="email" name="email" id="email" placeholder="Введите почту *">
+          </p>
         </div>
         <div class="form__radio">
           <p class="form__radio-text">С каким приложением путешествовали?</p>
-          <fieldset>
-            <legend class="visually-hidden">Операционная система</legend>
-            <ul class="form__radio-list">
-              <li class="form__radio-item">
-                <p><input class="form__radio-ios" type="radio" name="app" id="ios" value="Pink для iOS" checked>
-                  <label class="form__radio-label" for="ios">Pink для iOS</label>
-                </p>
-              </li>
-              <li class="form__radio-item">
-                <p><input class="form__radio-android" type="radio" name="app" id="android" value="Pink на Android">
-                  <label class="form__radio-label" for="android">Pink на Android</label>
-                </p>
-              </li>
-              <li class="form__radio-item">
-                <p><input class="form__radio-windows" type="radio" name="app" id="windows" value="Windows Phone">
-                  <label class="form__radio-label" for="windows">Windows Phone</label>
-                </p>
-              </li>
-            </ul>
-          </fieldset>
+          <ul class="form__radio-list">
+            <li class="form__radio-item">
+              <p><input class="form__radio-ios" type="radio" name="app" id="ios" value="Pink для iOS" checked>
+                <label class="form__radio-label" for="ios">Pink для iOS</label>
+              </p>
+            </li>
+            <li class="form__radio-item">
+              <p><input class="form__radio-android" type="radio" name="app" id="android" value="Pink на Android">
+                <label class="form__radio-label" for="android">Pink на Android</label>
+              </p>
+            </li>
+            <li class="form__radio-item">
+              <p><input class="form__radio-windows" type="radio" name="app" id="windows" value="Windows Phone">
+                <label class="form__radio-label" for="windows">Windows Phone</label>
+              </p>
+            </li>
+          </ul>
         </div>
         <div class="form__review">
           <p class="form__review-text">Опишите свои эмоции</p>
-          <label>Отзыв</label>
           <p class="form__review-desc">
-            <textarea class="form__review-textarea" name="comment" placeholder="Можно прям в красках, не
-                        стесняясь в выражениях"></textarea>
+            <textarea class="form__review-textarea" name="comment"
+              placeholder="Можно прям в красках,не стесняясь в выражениях"></textarea>
           </p>
           <button class="form__button-send" type="submit" value="Отправить форму">Отправить форму</button>
         </div>
       </form>
     </div>
     <div class="important">
-      <p class="important__text"><small>* — обязательные поля</small></p>
+      <p class="important__text"><small>* — обязательные поля </small></p>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__social">
       <img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40" alt="логотип пинк">
+    </div>
+    <div class="page-footer__image">
       <a class="page-footer__twitter" href="#"><img src="img/twitter.svg" width="18" height="14"
           alt="ссылка на твитерр аккаунт"></a>
       <a class="page-footer__facebook" href="#"><img src="img/facebook.svg" width="9" height="18"
@@ -162,7 +156,8 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/study"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/study"><img src="img/htmlacademy.png" width="27"
+          height="34" alt="логотип академии"></a>
     </div>
   </footer>
 </body>
