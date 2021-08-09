@@ -9,23 +9,43 @@
   justify-content: center;
   padding-top: 102px;
   padding-bottom: 84px;
+  margin: 0;
 }
 
 .galery__text {
   background-color: #f2f2f2;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.galery__inner {
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.galery_desc-text {
+  text-align: center;
 }
 
 .galery__text-name {
   padding-left: 20px;
+  padding-top: 25px;
+  margin: 0;
 }
 
 .galery__subtitle {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin: 0;
+  text-align: center;
+  padding-top: 54px;
+  padding-bottom: 60px;
 }
 
 .galery__like {
@@ -38,6 +58,7 @@
   border: none;
   cursor: pointer;
   padding-left: 20px;
+  padding-bottom: 26px;
 }
 
 .galery__like-img {
