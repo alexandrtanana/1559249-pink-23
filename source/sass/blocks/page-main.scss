@@ -1,6 +1,6 @@
 .page-main__img {
   position: relative;
-  top: 23px;
+  top: 4px;
 }
 
 .page-main__operating {
@@ -36,9 +36,31 @@
   justify-content: space-around;
 }
 
-.page-main__wrap {
+.page-main__wrap{
+  outline: 2px solid rgb(255, 94, 0);
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.page-main__wraper {
   background-image: url("..//img/backmobile.jpg");
-  height: 462px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wraper{
+    background-image: url("..//img/backtablet.jpg");
+    order:2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wraper{
+    background-image: url("..//img/backdesktop.jpg");
+  }
 }
 
 .page-main__title {

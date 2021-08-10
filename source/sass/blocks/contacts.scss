@@ -10,6 +10,12 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__wraper{
+    display: grid;
+  }
+}
+
 .contacts__title {
   color: #080808;
   font-weight: 700;
