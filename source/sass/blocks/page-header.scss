@@ -37,8 +37,10 @@
   height: 23px;
   background-repeat: no-repeat;
   background-image:url("..//img/pinklogo.svg");
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .page-header__logo{
     background-image:url("..//img/logotablet.svg");
     width: 145px;
     height: 40px;
@@ -46,8 +48,10 @@
     left: 20px;
     top: 27px;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .page-header__logo{
     position: relative;
     left: 130px;
     top: 27px;
