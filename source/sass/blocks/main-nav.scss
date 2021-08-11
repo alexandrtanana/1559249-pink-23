@@ -33,11 +33,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item
+  .site-list__item {
     a {
-    padding-right: 78px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
+      padding-right: 78px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 }
