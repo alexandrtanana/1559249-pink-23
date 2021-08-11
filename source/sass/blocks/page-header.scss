@@ -4,10 +4,9 @@
   border: none;
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .page-header {
-    display:flex;
-
+    display: flex;
     background-color: #000000;
     opacity: 0.3;
   }
@@ -36,12 +35,12 @@
   width: 74px;
   height: 23px;
   background-repeat: no-repeat;
-  background-image:url("..//img/pinklogo.svg");
+  background-image: url("..//img/pinklogo.svg");
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo{
-    background-image:url("..//img/logotablet.svg");
+    background-image: url("..//img/logotablet.svg");
     width: 145px;
     height: 40px;
     position: relative;
@@ -51,7 +50,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo{
+  .page-header__logo {
     position: relative;
     left: 130px;
     top: 27px;
@@ -64,8 +63,8 @@
   border: none;
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .page-header__toggle {
-    display:none;
+    display: none;
   }
 }

@@ -1,6 +1,8 @@
+// common
 @import "common/variables.scss";
 @import "common/visually-hidden.scss";
 
+// blocks
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -17,5 +19,5 @@
 @import "blocks/galery.scss";
 @import "blocks/newphoto.scss";
 
-/*Global*/
+//Global
 @import "global/normalize";

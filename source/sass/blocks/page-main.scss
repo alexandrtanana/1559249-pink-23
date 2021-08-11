@@ -38,24 +38,25 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__wrap{
+  .page-main__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .page-main__wraper {
   background-image: url("..//img/backmobile.jpg");
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__wraper{
+  .page-main__wraper {
     background-image: url("..//img/backtablet.jpg");
     order: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__wraper{
+  .page-main__wraper {
     background-image: url("..//img/backdesktop.jpg");
   }
 }

@@ -7,14 +7,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .desc{
+  .desc {
     display: grid;
     grid-template-columns: 268px 1fr;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .desc__wrap{
+  .desc__wrap {
     order: 1;
   }
 }
