@@ -1,0 +1,27 @@
+.page-header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__toggle {
+  background-color: #283645;
+  color: #ffffff;
+  border: none;
+}
+
+.site-list__item {
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.main-nav__list {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,25 @@
+.page-footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.page-footer__image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 58px;
+  padding-bottom: 56px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.copyright__text {
+  text-align: center;
+}
