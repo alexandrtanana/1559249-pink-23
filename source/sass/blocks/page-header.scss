@@ -6,9 +6,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: absolute;
     display: flex;
-    background-color: #000000;
-    opacity: 0.3;
+    background-color: #0000008a;
+    width: 100%;
   }
 }
 
