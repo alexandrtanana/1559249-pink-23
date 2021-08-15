@@ -43,12 +43,20 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .study__image {
+  .study__img {
     display: none;
   }
 }
 
-.study__image {
-  padding-top: 54px;
-  padding-left: 20px;
+@media (min-width: $tablet-width) {
+  .study__img {
+    padding-top: 54px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .study__img {
+    padding-left: 130px;
+  }
 }
