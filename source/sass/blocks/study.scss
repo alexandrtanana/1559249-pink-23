@@ -1,0 +1,62 @@
+@media (min-width: $tablet-width) {
+  .study {
+    display: flex;
+    background-color: $white;
+  }
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .study__wrap {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .study__wrap {
+    padding-top: 102px;
+    padding-left: 72px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .study__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .study__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $blue;
+  }
+}
+
+
+.study__link {
+  color: $accent;
+}
+
+@media (max-width: $mobile-width-only) {
+  .study__img {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .study__img {
+    padding-top: 54px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .study__img {
+    padding-left: 130px;
+  }
+}

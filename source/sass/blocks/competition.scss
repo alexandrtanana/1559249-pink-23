@@ -5,8 +5,8 @@
 .competition__text-title {
   padding-top: 120px;
   padding-bottom: 51px;
-  text-align: center;
-  color: #ffffff;
+  padding-left: 46px;
+  color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -14,7 +14,7 @@
 }
 
 .competition__text-subtitle {
-  background-color: #ffffff;
+  background-color: $white;
   margin: 0;
   padding-top: 64px;
   padding-bottom: 55px;
