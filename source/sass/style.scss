@@ -1,33 +1,15 @@
-<<<<<<< HEAD
-/* stylelint-disable */
-@use "../../node_modules/normalize.css/normalize.css";
-
+// common
 @import "common/variables.scss";
 @import "common/visually-hidden.scss";
 
-@import "includes/page.scss";
-@import "includes/page-header.scss";
-@import "includes/main-nav.scss";
-@import "includes/page-main.scss";
-@import "includes/text.scss";
-@import "includes/desc.scss";
-@import "includes/slider-review.scss";
-@import "includes/table-slider.scss";
-@import "includes/contacts.scss";
-@import "includes/page-footer.scss";
-@import "includes/competition.scss";
-@import "includes/form.scss";
-@import "includes/important.scss";
-@import "includes/galery.scss";
-@import "includes/newphoto.scss";
-/* stylelint-enable */
-=======
+// blocks
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/text.scss";
 @import "blocks/desc.scss";
+@import "blocks/study.scss";
 @import "blocks/slider-review.scss";
 @import "blocks/table-slider.scss";
 @import "blocks/contacts.scss";
@@ -38,6 +20,6 @@
 @import "blocks/galery.scss";
 @import "blocks/newphoto.scss";
 
-/*Global*/
+//Global
 @import "global/normalize";
->>>>>>> 3ff67fdc442a5a3c03f99b79d6a9eb7d7962cdda
+

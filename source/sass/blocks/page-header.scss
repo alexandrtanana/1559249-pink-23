@@ -1,12 +1,79 @@
 .page-header {
   background-color: #283645;
-  cursor: pointer;
   color: #ffffff;
   border: none;
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: absolute;
+    display: flex;
+    background-color: #0000008a;
+    width: 100%;
+  }
+}
+
+.page-header__nav {
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 110px;
+  }
+}
+
 .page-header__logo {
   margin: 0;
-  padding-left: 20px;
-  padding-top: 24px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 74px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-image: url("..//img/pinklogo.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    background-image: url("..//img/logotablet.svg");
+    width: 145px;
+    height: 40px;
+    position: relative;
+    left: 20px;
+    top: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    position: relative;
+    left: 130px;
+    top: 27px;
+  }
+}
+
+.page-header__toggle {
+  display: block;
+  font-size: 0;
+  background-color: $blue;
+  background-image: url("img/closemenubtn.svg");
+  border: none;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+.page-header__button {
+  padding-right: 20px;
+  padding-top: 20px;
 }

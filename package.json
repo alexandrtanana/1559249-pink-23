@@ -10,7 +10,7 @@
     "gulp-postcss": "9.0.0",
     "gulp-sass": "5.0.0",
     "normalize.css": "^8.0.1",
-    "postcss": "8.2.8",
+    "postcss": "^8.3.6",
     "sass": "1.37.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10",

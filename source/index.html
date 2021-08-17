@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
@@ -11,43 +12,45 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__nav">
-      <a class="page-header__logo">
-        <img src="img/pinklogo.svg" width="74" height="23" alt="логотип пинк">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="page-header__button">Открыть меню</span></button>
+      <a class="page-header__logo" href="#"></a>
+      <button class="page-header__toggle" type="button"><span class="page-header__button"><svg width="23" height="23"
+            viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
+            <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
+          </svg></span></button>
     </div>
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="page-main">
-    <section class="page-main__wrap">
-      <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+    <div class="page-main__wrap">
+      <section class="page-main__wraper">
+        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+      </section>
       <img class="page-main__img" src="img/phone.png" width="320" height="286" alt="рука с телефоном">
-    </section>
-    <div class="page-main__operating">
-      <a class="page-main__download" href="#">Скачать приложение</a>
-      <div class="page-main__operating-system">
-        <a href="#"><img src="img/applelogo.svg" width="47" height="56" alt="логотип эпл"></a>
-        <a href="#"><img src="img/androidlogo.svg" width="43" height="47" alt="логотип андроид"></a>
-        <a href="#"><img src="img/microsoftlogo.svg" width="44" height="41" alt=" логотип виндовс"></a>
+      <div class="page-main__operating">
+        <a class="page-main__download" href="#">Скачать приложение</a>
+        <div class="page-main__operating-system">
+          <a href="#"><img src="img/applelogo.svg" width="47" height="56" alt="логотип эпл"></a>
+          <a href="#"><img src="img/androidlogo.svg" width="43" height="47" alt="логотип андроид"></a>
+          <a href="#"><img src="img/microsoftlogo.svg" width="44" height="41" alt=" логотип виндовс"></a>
+        </div>
+        <p class="page-main__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <p class="page-main__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
     <section class="text">
       <h2 class="text__desc">Устали от серости мегаполиса?<br>Нам есть, что вам
@@ -55,16 +58,41 @@
       </h2>
     </section>
     <div class="desc">
-      <h3 class="desc__title">Поднимает настроение</h3>
-      <p class="desc__subtitle">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-        кликов!
-      </p>
-      <h3 class="desc__title">Меняет мир вокруг</h3>
-      <p class="desc__subtitle">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-      </p>
-      <h3 class="desc__title">Заводит новых друзей</h3>
-      <p class="desc__subtitle">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      <img class="desc__image" src="img/iphone3.png" width="157" height="320" alt="изображение айфона">
+      <div class="desc__feature">
+        <div>
+          <h3 class="desc__title">Поднимает настроение</h3>
+          <p class="desc__subtitle">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов!
+          </p>
+        </div>
+        <div>
+          <h3 class="desc__title">Меняет мир вокруг</h3>
+          <p class="desc__subtitle">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект
+          </p>
+        </div>
+        <div>
+          <h3 class="desc__title">Заводит новых друзей</h3>
+          <p class="desc__subtitle">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="desc__image">
+        <img class="desc__img1" src="img/phonedesctop1.png" width="186" height="382" alt="изображение айфона">
+        <img class="desc__img2" src="img/phonedesctop2.png" width="186" height="382" alt="изображение айфона">
+        <img class="desc__img3" src="img/iphone3.png" width="157" height="320" alt="изображение айфона">
+      </div>
+    </div>
+    <div class="study">
+      <div class="study__image">
+        <img class="study__img" src="img/timer.png" width="238" height="276" alt="таймер">
+      </div>
+      <div class="study__wrap">
+        <h3 class="study__title">Эффектна 24 часа!</h3>
+        <p class="study__subtitle">Британские ученые провели исследования и доказали, что положительный эффект
+          от использования приложения длится целые сутки!
+        </p>
+        <a class="study__link" href="#">Узнать больше об исследовании</a>
+      </div>
     </div>
     <div class="slider-review">
       <h3 class="slider-review__title">Николай Петров</h3>
@@ -138,14 +166,17 @@
     </div>
     <div class="contacts">
       <h3 class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</h3>
-      <h4 class="contacts__title">Звоните:</h4>
-      <a class="contacts__subtitle" href="tel:+78125556666">+7(812)555-66-66</a>
-      <h4 class="contacts__title">Пишите:</h4>
-      <a class="contacts__subtitle" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      <h4 class="contacts__title">Приезжайте в гости:</h4>
-      <p class="contacts__subtitle">ул. Большая<br>Конюшенная, 19/8</p>
-      <img class="contacts__svg" src="img/trianglewhitefooter.png" alt="фон">
-      <img class="contacts__map" src="img/map.jpg" width="320" height="200" alt="карта месторасположения">
+      <div class="contacts__wraper">
+        <h4 class="contacts__title">Звоните:</h4>
+        <a class="contacts__subtitle" href="tel:+78125556666">+7(812)555-66-66</a>
+        <h4 class="contacts__title">Пишите:</h4>
+        <a class="contacts__subtitle" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <h4 class="contacts__title">Приезжайте в гости:</h4>
+        <p class="contacts__subtitle">ул. Большая<br>Конюшенная, 19/8</p>
+      </div>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6934907542188!2d30.32087666293226!3d59.937228080506834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f95b28107%3A0xc42fdf5b93274878!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1629035334928!5m2!1sru!2sby"
+        width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
     </div>
   </main>
   <footer class="page-footer">
