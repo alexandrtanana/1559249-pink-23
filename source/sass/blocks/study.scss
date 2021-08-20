@@ -5,7 +5,6 @@
   }
 }
 
-
 @media (max-width: $mobile-width-only) {
   .study__wrap {
     display: none;
@@ -27,7 +26,6 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .study__subtitle {
     font-weight: 400;
@@ -36,7 +34,6 @@
     color: $blue;
   }
 }
-
 
 .study__link {
   color: $accent;

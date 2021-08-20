@@ -1,5 +1,80 @@
-.newphoto__form {
+.newphoto {
+  padding-bottom: 54px;
+  margin-bottom: 40px;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $desktop-width) {
+  .newphoto {
+    width: 940px;
+    margin: 0 auto 100px;
+  }
+}
+
+.newphoto__form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .newphoto__form {
+    width: 800px;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__photo {
+    width: 300px;
+    height: 400px;
+    margin-top: 37px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__editor {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.newphoto__editor-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  height: 160px;
+  box-sizing: border-box;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 41px;
+  border-bottom: 1px solid #dddfe0;
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__button {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.newphoto__button-editor {
+  border: none;
 }
 
 .newphoto__img {

@@ -1,27 +1,93 @@
 .competition__text {
-  background-image: url("..//img/backmobile.jpg");
+  background-image: url("..//img/backdesktop.jpg");
+  background-size: 200%;
+  // width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 237px;
+}
+
+@media (min-width: $desktop-width) {
+  .competition__text {
+    background-size: 200%;
+  }
 }
 
 .competition__text-title {
   padding-top: 120px;
   padding-bottom: 51px;
-  padding-left: 46px;
   color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  margin: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__text-title {
+    width: 500px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__text-title {
+    width: 750px;
+  }
+}
+
+.competition__text-desc {
+  padding-top: 64px;
+  padding-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__text-desc {
+    padding-top: 90px;
+    padding-bottom: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__text-desc {
+    padding-bottom: 82px;
+  }
 }
 
 .competition__text-subtitle {
   background-color: $white;
-  margin: 0;
-  padding-top: 64px;
-  padding-bottom: 55px;
+  width: 280px;
+  margin: 0 auto;
+  color: #283645;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__text-subtitle {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__text-subtitle {
+    width: 760px;
+  }
+}
+
+.competition__text-additional {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__text-additional {
+    display: inline;
+  }
 }

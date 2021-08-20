@@ -3,8 +3,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: #1d2631;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,12 +45,34 @@
   box-sizing: border-box;
   border-radius: 29px;
   font-weight: bold;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  padding: 15px 0;
+  width: 280px;
+  height: 55px;
 }
 
 .page-main__operating-system {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0;
+}
+
+.page-main__apple-logo {
+  margin-right: 35px;
+}
+
+.page-main__android-logo {
+  margin-right: 35px;
+}
+
+.page-main__wrap {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-position: left bottom;
+  background-size: 258px auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,8 +84,13 @@
 }
 
 .page-main__wrap {
+  background-color: #283645;
+  width: 100%;
   background-image: url("..//img/backmobile.jpg");
-  width: auto;
+  background-position: center;
+  background-size: cover;
+  height: 462px;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,6 +109,22 @@
   }
 }
 
+.page-main__wraper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-image: url("..//img/phonemobile.png");
+  background-position: left bottom;
+  height: 462px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page-main__wraper-title {
+  width: 280px;
+}
 
 .page-main__img {
   position: relative;
@@ -105,7 +151,6 @@
     left: -91px;
   }
 }
-
 
 .page-main__title {
   font-weight: 300;
@@ -144,11 +189,11 @@
 .page-main__desc {
   color: $white;
   line-height: 24px;
-  margin: 0;
-  padding: 0;
-  margin-top: 31px;
-  margin-bottom: 38px;
   text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 @media (min-width: $tablet-width) {

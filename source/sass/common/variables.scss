@@ -4,10 +4,14 @@ $white: #ffffff;
 $accent: #d22856;
 $blue: #283645;
 $gray: #f2f2f2;
+$black: #000000;
 
 
 // Viewports
 
-$mobile-width-only: 659px;
-$tablet-width: 660px;
+$mobile-width-only: 699px;
+// @media (min-width: $mobile-width-only)
+$tablet-width: 700px;
+// @media (min-width: $tablet-width)
 $desktop-width: 1200px;
+// @media (min-width: $desktop-width)

@@ -8,8 +8,10 @@
   .page-header {
     position: absolute;
     display: flex;
+    justify-content: center;
     background-color: #0000008a;
     width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -53,7 +55,6 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     position: relative;
-    left: 130px;
     top: 27px;
   }
 }
@@ -65,7 +66,6 @@
   background-image: url("img/closemenubtn.svg");
   border: none;
 }
-
 
 @media (min-width: $desktop-width) {
   .page-header__toggle {
