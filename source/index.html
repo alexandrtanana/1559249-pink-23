@@ -11,168 +11,258 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav">
-      <a class="page-header__logo" href="#"></a>
-      <button class="page-header__toggle" type="button"><span class="page-header__button"><svg width="23" height="23"
-            viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
-            <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
-          </svg></span></button>
+    <div class="page-header__main">
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#">Главная</a>
+    <nav class="page-header__nav">
+      <ul class="page-header__nav-list site-list">
+        <li class="page-header__list-item page-header__list-menu">
+          <a class="page-header__logo"></a>
+          <button class="page-header__toggle" type="button"><span class="page-header__button"><svg width="23"
+                height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
+                <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
+              </svg></span></button>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Фотографии</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="#">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="catalog.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="form.html">Конкурс</a>
+        </li>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <div class="page-main__wrap">
-      <section class="page-main__wraper">
-        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
-      </section>
-      <img class="page-main__img" src="img/phone.png" width="320" height="286" alt="рука с телефоном">
+      <div class="page-main__wraper">
+        <div class="page-main__wraper-title">
+          <p class="page-main__title">Взгляните на жизнь иначе!</p>
+        </div>
+      </div>
       <div class="page-main__operating">
         <a class="page-main__download" href="#">Скачать приложение</a>
         <div class="page-main__operating-system">
-          <a href="#"><img src="img/applelogo.svg" width="47" height="56" alt="логотип эпл"></a>
-          <a href="#"><img src="img/androidlogo.svg" width="43" height="47" alt="логотип андроид"></a>
-          <a href="#"><img src="img/microsoftlogo.svg" width="44" height="41" alt=" логотип виндовс"></a>
+          <a class="page-main__apple-logo" href="#"><img src="img/applelogo.svg" width="47" height="56"
+              alt="логотип эпл"></a>
+          <a class="page-main__android-logo" href="#"><img src="img/androidlogo.svg" width="43" height="47"
+              alt="логотип андроид"></a>
+          <a class="page-main__windows-logo" href="#"><img src="img/microsoftlogo.svg" width="44" height="41"
+              alt=" логотип виндовс"></a>
         </div>
         <p class="page-main__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
     <section class="text">
-      <h2 class="text__desc">Устали от серости мегаполиса?<br>Нам есть, что вам
-        предложить!
-      </h2>
+      <h1 class="text__desc">Устали от серости мегаполиса?</h1>
+      <h2 class="text__desc">Нам есть, что вам<br> предложить!</h2>
     </section>
     <div class="desc">
       <div class="desc__feature">
-        <div>
-          <h3 class="desc__title">Поднимает настроение</h3>
-          <p class="desc__subtitle">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!
+        <div class="desc__feature-item">
+          <div class="desc__feature-wraper">
+            <h3 class="desc__title">Поднимает настроение</h3>
+            <p class="desc__subtitle">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+              кликов!
+            </p>
+          </div>
+        </div>
+        <div class="desc__feature-item">
+          <div class="desc__feature-wraper">
+            <h3 class="desc__title">Меняет мир вокруг</h3>
+            <p class="desc__subtitle">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект
+            </p>
+          </div>
+        </div>
+        <div class="desc__feature-item">
+          <div class="desc__feature-wraper">
+            <h3 class="desc__title">Заводит новых друзей</h3>
+            <p class="desc__subtitle">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="effect">
+      <div class="effect__wrap">
+        <div class="effect__wraper">
+          <h3 class="effect__title">Эффектна 24 часа!</h3>
+          <p class="effect__subtitle">Британские ученые провели исследования и доказали, что положительный эффект
+            от использования приложения длится целые сутки!
           </p>
-        </div>
-        <div>
-          <h3 class="desc__title">Меняет мир вокруг</h3>
-          <p class="desc__subtitle">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект
-          </p>
-        </div>
-        <div>
-          <h3 class="desc__title">Заводит новых друзей</h3>
-          <p class="desc__subtitle">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
-      <div class="desc__image">
-        <img class="desc__img1" src="img/phonedesctop1.png" width="186" height="382" alt="изображение айфона">
-        <img class="desc__img2" src="img/phonedesctop2.png" width="186" height="382" alt="изображение айфона">
-        <img class="desc__img3" src="img/iphone3.png" width="157" height="320" alt="изображение айфона">
-      </div>
     </div>
-    <div class="study">
-      <div class="study__image">
-        <img class="study__img" src="img/timer.png" width="238" height="276" alt="таймер">
+    <article class="carousel carousel--controls container">
+      <div class="carousel__background"><img src="img/quotes.svg" width="79" height="63" alt="отзывы"></div>
+      <div class="carousel__wrapper">
+        <div class="carousel__slide" id="review-1" tabindex="0">
+          <div class="carousel__title-wraper">
+            <h3 class="carousel__title">Николай Петров</h3>
+            <p class="carousel__title-name">25 лет, водитель трамвая</p>
+          </div>
+          <div class="carousel__arrow">
+            <a href="#review-1"><img src="img/leftarrow.svg" alt="в лево"></a>
+            <a href="#review-2"><img src="img/rightarrow.svg" alt="в право"></a>
+          </div>
+          <blockquote class="carousel__blockquote">
+            <p class="carousel__subtitle">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+            </p>
+          </blockquote>
+        </div>
+        <div class="carousel__slide" id="review-2" tabindex="0">
+          <div class="carousel__title-wraper">
+            <h3 class="carousel__title">Сергей Хуцкий</h3>
+            <p class="carousel__title-name">27 лет, инженер по лесопользованию</p>
+          </div>
+          <div class="carousel__arrow">
+            <a href="#review-1"><img src="img/leftarrow.svg" alt="в лево"></a>
+            <a href="#review-3"><img src="img/rightarrow.svg" alt="в право"></a>
+          </div>
+          <blockquote>
+            <p class="carousel__subtitle">"Очень классное приложение,разработчикам респект!"</p>
+          </blockquote>
+        </div>
+        <div class="carousel__slide" id="review-3" tabindex="0">
+          <div class="carousel__title-wraper">
+            <h3 class="carousel__title">Виктор Казакевич</h3>
+            <p class="carousel__title-name">27 лет, лесник</p>
+          </div>
+          <div class="carousel__arrow">
+            <a href="#review-2"><img src="img/leftarrow.svg" alt="в лево"></a>
+            <a href="#review-3"><img src="img/rightarrow.svg" alt="в право"></a>
+          </div>
+          <blockquote>
+            <p class="carousel__subtitle">"Приложение за которое не стыдно.Всё очень понятно и просто!"</p>
+          </blockquote>
+        </div>
       </div>
-      <div class="study__wrap">
-        <h3 class="study__title">Эффектна 24 часа!</h3>
-        <p class="study__subtitle">Британские ученые провели исследования и доказали, что положительный эффект
-          от использования приложения длится целые сутки!
-        </p>
-        <a class="study__link" href="#">Узнать больше об исследовании</a>
+      <ul class="carousel__dots">
+        <li><a class="carousel__dot" href="#review-1" title="Go to review 1"></a></li>
+        <li><a class="carousel__dot" href="#review-2" title="Go to review 2"></a></li>
+        <li><a class="carousel__dot" href="#review-3" title="Go to review 3"></a></li>
+      </ul>
+    </article>
+    <div class="tariffs">
+      <div class="carousel tariffs" data-start="1">
+        <div class="tariffs__wrapper carousel__wrapper container">
+          <table class="tariffs__table">
+            <caption class="visually-hidden">Тарифные планы</caption>
+            <thead class="tariffs__head">
+              <tr class="tariffs__head-row">
+                <td class="tariffs__empty-cell"></td>
+                <th class="tariffs__tariff carousel__table-col" id="Broke">База
+                  <p class="tariffs__price">1,99 USD</p>
+                </th>
+                <th class="tariffs__tariff carousel__table-col" id="Woke">Стандарт
+                  <p class="tariffs__price">3,99 USD</p>
+                  <p class="tariffs__hit-ribbon">Хит</p>
+                </th>
+                <th class="tariffs__tariff carousel__table-col" id="Bespoke">Анлим
+                  <p class="tariffs__price">9,99 USD</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="tariffs__body">
+              <tr class="tariffs__body-row">
+                <th class="tariffs__feature">Розовый фильтр</th>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Розовый фильтр">
+                    <svg stroke="#3DC644" width="32" height="32" aria-label="Cringe is disabled" role="img">
+                      <use href="#checkmark"></use>
+                    </svg></span></td>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Розовый фильтр">
+                    <svg stroke="#3DC644" width="32" height="32" aria-label="Cringe is enabled" focusable="false"
+                      role="img">
+                      <use href="#checkmark"></use>
+                    </svg></span></td>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Розовый фильтр">
+                    <svg stroke="#3DC644" width="32" height="32" aria-label="Cringe is disabled" focusable="false"
+                      role="img">
+                      <use href="#checkmark"></use>
+                    </svg></span></td>
+              </tr>
+              <tr class="tariffs__body-row">
+                <th class="tariffs__feature">Смайлики</th>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Смайлики">
+                    <svg stroke="#F25B26" width="32" height="32" aria-label="Based is enabled" focusable="false"
+                      role="img">
+                      <use href="#close"></use>
+                    </svg></span></td>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Смайлики">
+                    <svg stroke="#3DC644" width="32" height="32" aria-label="Based is disabled" focusable="false"
+                      role="img">
+                      <use href="#checkmark"></use>
+                    </svg></span></td>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Смайлики">
+                    <svg stroke="#3DC644" width="32" height="32" aria-label="Based is enabled" focusable="false"
+                      role="img">
+                      <use href="#checkmark"></use>
+                    </svg></span></td>
+              </tr>
+              <tr class="tariffs__body-row">
+                <th class="tariffs__feature">Коментарии</th>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="коментарии">
+                    <svg stroke="#F25B26" width="32" height="32" aria-label="Redpilled is disabled" focusable="false"
+                      role="img">
+                      <use href="#close"></use>
+                    </svg></span></td>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Коментарии">
+                    <svg stroke="#F25B26" width="32" height="32" aria-label="Redpilled is disabled" focusable="false"
+                      role="img">
+                      <use href="#close"></use>
+                    </svg></span></td>
+                <td class="tariffs__value"><span class="tariffs__value-wrapper" data-feature="Коментарии">
+                    <svg stroke="#3DC644" width="32" height="32" aria-label="Redpilled is enabled" focusable="false"
+                      role="img">
+                      <use href="#checkmark"></use>
+                    </svg></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="carousel__dots tariffs__dots">
+          <li><a class="carousel__dot" href="#Broke">База</a></li>
+          <li><a class="carousel__dot" href="#Woke">Стандарт</a></li>
+          <li><a class="carousel__dot" href="#Bespoke">Анлим</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="slider-review">
-      <h3 class="slider-review__title">Николай Петров</h3>
-      <blockquote>
-        <p class="slider-review__subtitle">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-        </p>
-      </blockquote>
-      <h3 class="slider-review__title">Сергей Хуцкий</h3>
-      <blockquote>
-        <p class="slider-review__subtitle">Очень классное приложение,разработчикам респект!</p>
-      </blockquote>
-      <h3 class="slider-review__title">Виктор Казакевич</h3>
-      <blockquote>
-        <p class="slider-review__subtitle">Приложение за которое не стыдно.Всё очень понятно и просто!</p>
-      </blockquote>
-    </div>
-    <div class="table-slider">
-      <table class="table-slider__base">
-        <tr>
-          <th>База</th>
-        </tr>
-        <tr>
-          <th>1,99 USD</th>
-        </tr>
-        <tr>
-          <th>Розовый фильтр</th>
-        </tr>
-        <tr>
-          <th>Смайлики</th>
-        </tr>
-        <tr>
-          <th>Комментарии</th>
-        </tr>
-      </table>
-      <table class="table-slider__standard">
-        <tr>
-          <th>Стандарт</th>
-        </tr>
-        <tr>
-          <th>3,99 USD</th>
-        </tr>
-        <tr>
-          <th>Розовый фильтр</th>
-        </tr>
-        <tr>
-          <th>Смайлики</th>
-        </tr>
-        <tr>
-          <th>Комментарии</th>
-        </tr>
-      </table>
-      <table class="table-slider__unlim">
-        <tr>
-          <th>Анлим</th>
-        </tr>
-        <tr>
-          <th>9,99 USD</th>
-        </tr>
-        <tr>
-          <th>Розовый фильтр</th>
-        </tr>
-        <tr>
-          <th>Смайлики</th>
-        </tr>
-        <tr>
-          <th>Комментарии</th>
-        </tr>
-      </table>
+      <!-- sprite.svg-->
+      <svg style="display: none">
+        <symbol id="checkmark" stroke-width="14" stroke-dashoffset="61" stroke-dasharray="0" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 100 100" fill="none">
+          <polyline points="10,60 40,85 85,15"></polyline>
+        </symbol>
+        <symbol id="close" stroke-width="14" stroke-dashoffset="61" stroke-dasharray="0" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 100 100">
+          <line x1="15" y1="15" x2="85" y2="85"></line>
+          <line x1="85" y1="15" x2="15" y2="85"></line>
+        </symbol>
+      </svg>
     </div>
     <div class="contacts">
       <h3 class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</h3>
       <div class="contacts__wraper">
-        <h4 class="contacts__title">Звоните:</h4>
-        <a class="contacts__subtitle" href="tel:+78125556666">+7(812)555-66-66</a>
-        <h4 class="contacts__title">Пишите:</h4>
-        <a class="contacts__subtitle" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <h4 class="contacts__title">Приезжайте в гости:</h4>
-        <p class="contacts__subtitle">ул. Большая<br>Конюшенная, 19/8</p>
+        <div class="contacts__item">
+          <h4 class="contacts__title">Звоните:</h4>
+          <a class="contacts__subtitle" href="tel:+78125556666">+7(812)555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <h4 class="contacts__title">Пишите:</h4>
+          <a class="contacts__subtitle" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <h4 class="contacts__title">Приезжайте в гости:</h4>
+          <p class="contacts__subtitle">ул. Большая<br>Конюшенная, 19/8</p>
+        </div>
       </div>
       <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6934907542188!2d30.32087666293226!3d59.937228080506834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f95b28107%3A0xc42fdf5b93274878!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1629035334928!5m2!1sru!2sby"
@@ -180,23 +270,22 @@
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40" alt="логотип пинк">
+    <div class="page-footer__logo">
+      <a href="#"><img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40"
+          alt="логотип пинк"></a>
     </div>
-    <div class="page-footer__image">
-      <a class="page-footer__link" href="#"><img src="img/twitter.svg" width="18" height="14"
-          alt="ссылка на твитерр аккаунт"></a>
-      <a class="page-footer__link" href="#"><img src="img/facebook.svg" width="9" height="18"
-          alt="ссылка на фейсбук аккаунт"></a>
-      <a class="page-footer__link" href="#"><img src="img/youtube.svg" width="15" height="13"
-          alt=" ссылка на ютуб канал"></a>
+    <div class="page-footer__social">
+      <a class="page-footer__twitter" href="#"></a>
+      <a class="page-footer__facebook" href="#"></a>
+      <a class="page-footer__youtube" href="#"></a>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
+      <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/study"><img src="img/htmlacademy.png" width="27"
           height="34" alt="логотип академии"></a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

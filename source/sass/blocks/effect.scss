@@ -1,0 +1,123 @@
+@media (max-width: $mobile-width-only) {
+  .effect {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    margin-top: 58px;
+    background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    margin-top: 0;
+    padding-top: 24px;
+    background-color: $gray;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .effect__wrap {
+    position: relative;
+    padding-bottom: 118px;
+    background: url("..//img/timer.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 239px auto;
+    width: 620px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 310px;
+    padding-top: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__wrap {
+    padding-left: 367px;
+    padding-top: 92px;
+    padding-bottom: 115px;
+    background-size: 300px auto;
+    width: 940px;
+    margin:0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect__title {
+    width: 170px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__title {
+    width: 530px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $blue;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    width: 520px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect__link {
+    color: $accent;
+    font-size: 14px;
+    line-height: 24px;
+    color: $accent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .effect__img {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect__img {
+    padding-top: 54px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__img {
+    padding-left: 130px;
+  }
+}

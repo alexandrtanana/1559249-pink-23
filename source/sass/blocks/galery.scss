@@ -9,58 +9,202 @@
   justify-content: center;
   padding-top: 102px;
   padding-bottom: 84px;
-  margin: 0;
-}
-
-.galery__text {
-  background-color: #f2f2f2;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.galery__inner {
-  a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-  }
-}
-
-.galery_desc-text {
+  // width: 280px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .galery__title {
+    // width: 500px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .galery__title {
+    // width: 750px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.galery__wraper {
+  padding-top: 47px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__wraper {
+    padding-top: 90px;
+    padding-bottom: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .galery__wraper {
+    padding-bottom: 82px;
+  }
+}
+
+.galery__img-block {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__img-block {
+    width: 620px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .galery__img-block {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.galery__inner {
+  align-self: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__inner {
+    align-self: auto;
+    width: 300px;
+    min-height: 455px;
+    margin-bottom: 20px;
+  }
+}
+
+.galery__img-wrap {
+  width: 280px;
+  height: 180px;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__img-wrap {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.galery__text {
+  position: relative;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 17px 18px 20px;
+  background-color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__text {
+    width: 300px;
+    padding: 23px 32px 25px 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .galery__text-name {
-  padding-left: 20px;
-  padding-top: 25px;
-  margin: 0;
+  strong {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $blue;
+  }
+}
+
+.galery__text-time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.galery__desc {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $blue;
+}
+
+.galery__like {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__like {
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .galery__like-img {
+    order: 2;
+  }
+}
+
+.galery__like-text {
+  margin-left: 18px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+@media (min-width: $tablet-width) {
+  .galery__like-text {
+    margin: 0;
+  }
 }
 
 .galery__subtitle {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  margin: 0;
   text-align: center;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  width: 280px;
+  margin: 22px auto 43px;
+  color: $blue;
 }
 
-.galery__like {
-  font-size: 12px;
-  line-height: 2;
-  text-transform: uppercase;
-  color: $accent;
-  display: flex;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  padding-left: 20px;
-  padding-bottom: 26px;
+@media (min-width: $tablet-width) {
+  .galery__subtitle {
+    width: 430px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    width: 430px;
+    margin-top: 45px;
+    margin-bottom: 67px;
+  }
 }
 
-.galery__like-img {
-  padding-right: 18px;
+@media (min-width: $desktop-width) {
+  .galery__subtitle {
+    margin-top: 43px;
+  }
 }

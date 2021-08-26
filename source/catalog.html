@@ -11,173 +11,229 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav">
-      <a class="page-header__logo" href="index.html"></a>
-      <button class="page-header__toggle" type="button"><span class="page-header__button">Открыть меню</span></button>
+    <div class="page-header__main">
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
+    <nav class="page-header__nav">
+      <ul class="page-header__nav-list site-list">
+        <li class="page-header__list-item page-header__list-menu">
+          <a class="page-header__logo" href="index.html"></a>
+          <button class="page-header__toggle" type="button"><span class="page-header__button"><svg width="23"
+                height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
+                <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
+              </svg></span></button>
         </li>
-        <li class="site-list__item">
-          <a href="#">Фотографии</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="#">Фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="form.html">Конкурс</a>
+        </li>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
         </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="galery">
     <div class="galery__wrap">
       <h1 class="galery__title">Фотографии<br>пользователей</h1>
-      <h2 class="galery__subtitle">Взгляните на фотографии, которые<br> выкладывают пользователи!<br>
-        Видите, как не хватает ваших?
-      </h2>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/panoramatablet.jpg" width="320" height="137"
-            alt="панорама дня"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Анна</strong><time class="galery__text-time"
-              datetime="2021-07-27 16:00">(5 минут назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Прыгать или нет? Напишите в<br> комментарии свой совет и<br>
-              смотрите прямую трансляцию в<br> перископе,
-              задавайте свои вопросы!
-            </p>
+      <div class="galery__wraper">
+        <h2 class="galery__subtitle">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </h2>
+      </div>
+      <div class="panorama">
+        <div class="panorama__img">
+          <a href="#">
+            <img class="panorama__photo" src="img/panoramatablet.jpg" width="320" height="137" alt="панорама дня"></a>
+          <div class="panorama__day">Панорама дня</div>
+        </div>
+        <div class="panorama__text">
+          <strong class="panorama__name">Анна</strong>
+          <time class="panorama__text-time" datetime="2021-07-27 16:00">(5 минут назад)</time>
+          <blockquote class="panorama__desc"> Прыгать или нет? Напишите в комментарии свой совет и
+            смотрите прямую трансляцию в перископе,
+            задавайте свои вопросы!
           </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>215</span></span></button>
+          <button class="panorama__like like-button" type="button">
+            <img class="panorama__like-img" src="img/heart.svg" width="13" height="12" alt="лайк">
+            <span class="panorama__like-text">Нравится:<span class="panorama__like-total">215</span></span></button>
         </div>
       </div>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/photo1.jpg" width="280" height="180" alt="фото автомобиля"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Левон</strong><time class="galery__text-time" datetime="2021-07-27">(5
-              часов назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Вчера он на луну летал, сегодня в<br> руки к нам попал.
-            </p>
-          </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>356</span></span></button>
+      <div class="galery__img-block">
+        <div class="galery__inner">
+          <div class="galery__img-wrap">
+            <a href="#"><img class="galery__photo" src="img/photo1.jpg" width="280" height="180"
+                alt="фото автомобиля"></a>
+          </div>
+          <div class="galery__text">
+            <div class="galery__text-wrap">
+              <p class="galery__text-name"><strong>Левон</strong><time class="galery__text-time"
+                  datetime="2021-07-27">(5
+                  часов назад)</time></p>
+              <blockquote class="galery__desc">
+                <p class="galery__desc-text"> Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </blockquote>
+            </div>
+            <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
+                width="13" height="12" alt="лайк"><span class="galery__like-text">Нравится:<span
+                  class="galery__like-total">356</span></span></button>
+          </div>
+        </div>
+        <div class="galery__inner">
+          <div class="galery__img-wrap">
+            <a href="#"><img class="galery__photo" src="img/photo2.jpg" width="280" height="180"
+                alt="ударная установка"></a>
+          </div>
+          <div class="galery__text">
+            <div class="galery__text-wrap">
+              <p class="galery__text-name"><strong>Антон</strong><time class="galery__text-time"
+                  datetime="2021-07-27">(12
+                  часов назад)</time></p>
+              <blockquote class="galery__desc">
+                <p class="galery__desc-text"> Соседи будут рады</p>
+              </blockquote>
+            </div>
+            <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
+                width="13" height="12" alt="лайк"><span class="galery__like-text">Нравится:<span
+                  class="galery__like-total">666</span></span></button>
+          </div>
+        </div>
+        <div class="galery__inner">
+          <div class="galery__img-wrap">
+            <a href="#"><img class="galery__photo" src="img/photo3.jpg" width="280" height="180"
+                alt="стеклянная стена"></a>
+          </div>
+          <div class="galery__text">
+            <div class="galery__text-wrap">
+              <p class="galery__text-name"><strong>Борис</strong><time class="galery__text-time"
+                  datetime="2021-07-26">(20
+                  часов назад)</time></p>
+              <blockquote class="galery__desc">
+                <p class="galery__desc-text"> Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+              </blockquote>
+            </div>
+            <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
+                width="13" height="12" alt="лайк"><span class="galery__like-text">Нравится:<span
+                  class="galery__like-total">215</span></span></button>
+          </div>
+        </div>
+        <div class="galery__inner">
+          <div class="galery__img-wrap">
+            <a href="#"><img class="galery__photo" src="img/photo4tablet.jpg" width="280" height="180"
+                alt="кубанская бахча"></a>
+          </div>
+          <div class="galery__text">
+            <div class="galery__text-wrap">
+              <p class="galery__text-name"><strong>Сергей</strong><time class="galery__text-time"
+                  datetime="2021-07-26">(25
+                  часов назад)</time></p>
+              <blockquote class="galery__desc">
+                <p class="galery__desc-text"> Самая кубанская в мире!
+                </p>
+              </blockquote>
+            </div>
+            <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
+                width="13" height="12" alt="лайк"><span class="galery__like-text">Нравится:<span
+                  class="galery__like-total">4</span></span></button>
+          </div>
+        </div>
+        <div class="galery__inner">
+          <div class="galery__img-wrap">
+            <a href="#"><img class="galery__photo" src="img/photo5tablet.jpg" width="280" height="180"
+                alt="отдых в горах"></a>
+          </div>
+          <div class="galery__text">
+            <div class="galery__text-wrap">
+              <p class="galery__text-name"><strong>Максим</strong><time class="galery__text-time"
+                  datetime="2021-07-25">(40
+                  часов назад)</time></p>
+              <blockquote class="galery__desc">
+                <p class="galery__desc-text"> Где снег-то?</p>
+              </blockquote>
+            </div>
+            <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
+                width="13" height="12" alt="лайк"><span class="galery__like-text">Нравится:<span
+                  class="galery__like-total">150</span></span></button>
+          </div>
+        </div>
+        <div class="galery__inner">
+          <div class="galery__img-wrap">
+            <a href="#"><img class="galery__photo" src="img/photo6tablet.jpg" width="280" height="180"
+                alt="закат из иллюминатора"></a>
+          </div>
+          <div class="galery__text">
+            <div class="galery__text-wrap">
+              <p class="galery__text-name"><strong>Надежда</strong><time class="galery__text-time"
+                  datetime="2021-07-25">(45
+                  часов назад)</time></p>
+              <blockquote class="galery__desc">
+                <p class="galery__desc-text"> Всем GM и взаимные лайки!
+                </p>
+              </blockquote>
+            </div>
+            <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
+                width="13" height="12" alt="лайк"><span class="galery__like-text">Нравится:<span
+                  class="galery__like-total">2560</span></span></button>
+          </div>
         </div>
       </div>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/photo2.jpg" width="280" height="180"
-            alt="ударная установка"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Антон</strong><time class="galery__text-time" datetime="2021-07-27">(12
-              часов назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Соседи будут рады</p>
-          </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>666</span></span></button>
-        </div>
-      </div>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/photo3.jpg" width="280" height="180" alt="стеклянная стена"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Борис</strong><time class="galery__text-time" datetime="2021-07-26">(20
-              часов назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-          </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>215</span></span></button>
-        </div>
-      </div>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/photo4tablet.jpg" width="280" height="180"
-            alt="кубанская бахча"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Сергей</strong><time class="galery__text-time" datetime="2021-07-26">(25
-              часов назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Самая кубанская в мире!
-            </p>
-          </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>4</span></span></button>
-        </div>
-      </div>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/photo5tablet.jpg" width="280" height="180"
-            alt="отдых в горах"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Максим</strong><time class="galery__text-time" datetime="2021-07-25">(40
-              часов назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Где снег-то?</p>
-          </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>150</span></span></button>
-        </div>
-      </div>
-      <div class="galery__inner">
-        <a href="#"><img class="galery__photo" src="img/photo6tablet.jpg" width="280" height="180"
-            alt="закат из иллюминатора"></a>
-        <div class="galery__text">
-          <p class="galery__text-name"><strong>Надежда</strong><time class="galery__text-time" datetime="2021-07-25">(45
-              часов назад)</time></p>
-          <blockquote class="galery__desc">
-            <p class="galery__desc-text"> Всем GM и взаимные лайки!
-            </p>
-          </blockquote>
-          <button class="galery__like like-button" type="button"><img class="galery__like-img" src="img/heart.svg"
-              width="13" height="12" alt="лайк"><span>Нравится:<span>2560</span></span></button>
-        </div>
-      </div>
-      <h3 class="galery__subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в<br> телефоне!</h3>
+      <h3 class="galery__subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h3>
     </div>
     <div class="newphoto">
       <form class="newphoto__form" action="https://echo.htmlacademy.ru" method="POST">
-        <a class="newphoto__img" href="#"><img class="newphoto__photo" src="img/photo7tablet.jpg"
-            alt="морозная зима"></a>
-        <p class="newphoto__button">
-          <button class="newphoto__button-editor" type="button"><img src="img/crop.svg" width="44" height="44"
-              alt="обрезка фото"></button>
-          <button class="newphoto__button-editor" type="button"><img src="img/fill.svg" width="48" height="43"
-              alt="заливка"></button>
-          <button class="newphoto__button-editor" type="button"><img src="img/contrast.svg" width="32" height="32"
-              alt="контраст"></button>
-        </p>
-        <input class="newphoto__range" type="range" min="0" max="100" step="1" value="50">
-        <div class="newphoto__button-input">
-          <p>
-            <input class="newphoto__add" type="submit" value="Запостить">
-          </p>
-          <p>
-            <input class="newphoto__cancellation" type="reset" value="Отмена">
-          </p>
+        <div class="newphoto__photo">
+          <a class="newphoto__img" href="#"><img class="newphoto__photo" src="img/photo7tablet.jpg" width="280"
+              height="374" alt="морозная зима"></a>
+        </div>
+        <div class="newphoto__editor">
+          <div class="newphoto__editor-tools">
+            <p class="newphoto__button">
+              <button class="newphoto__button-editor" type="button"><img src="img/crop.svg" width="44" height="44"
+                  alt="обрезка фото"></button>
+              <button class="newphoto__button-editor" type="button"><img src="img/fill.svg" width="48" height="43"
+                  alt="заливка"></button>
+              <button class="newphoto__button-editor" type="button"><img src="img/contrast.svg" width="32" height="32"
+                  alt="контраст"></button>
+            </p>
+            <input class="newphoto__range" type="range" min="0" max="100" step="1" value="50">
+          </div>
+          <div class="newphoto__button-input">
+            <p>
+              <input class="newphoto__add" type="submit" value="Запостить">
+            </p>
+            <p>
+              <input class="newphoto__cancellation" type="reset" value="Отмена">
+            </p>
+          </div>
         </div>
       </form>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40" alt="логотип пинк">
+    <div class="page-footer__logo">
+      <a href="index.html"><img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40"
+          alt="логотип пинк"></a>
     </div>
-    <div class="page-footer__image">
-      <a class="page-footer__twitter" href="#"><img src="img/twitter.svg" width="18" height="14"
-          alt="ссылка на твитерр аккаунт"></a>
-      <a class="page-footer__facebook" href="#"><img src="img/facebook.svg" width="9" height="18"
-          alt="ссылка на фейсбук аккаунт"></a>
-      <a class="page-footer__youtube" href="#"><img src="img/youtube.svg" width="15" height="13"
-          alt=" ссылка на ютуб канал"></a>
+    <div class="page-footer__social">
+      <a class="page-footer__twitter" href="#"></a>
+      <a class="page-footer__facebook" href="#"></a>
+      <a class="page-footer__youtube" href="#"></a>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
+      <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/study"><img src="img/htmlacademy.png" width="27"
           height="34" alt="логотип академии"></a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -12,17 +12,15 @@
 
 @media (min-width: $tablet-width) {
   .desc {
-    display: flex;
-    flex-direction: row-reverse;
-    background-size: auto;
-    background-repeat: no-repeat;
+    margin-top: 47px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .desc{
+  .desc {
     display: flex;
     flex-direction: column-reverse;
+    background-size: 100%;
   }
 }
 
@@ -36,14 +34,12 @@
   padding-left: 20px;
 }
 
-@media (max-width: $desktop-width){
+@media (max-width: $desktop-width) {
   .desc__img1,
-  .desc__img2{
+  .desc__img2 {
     display: none;
   }
-
 }
-
 
 @media (min-width: $tablet-width) {
   .desc__img3 {
@@ -55,25 +51,112 @@
 }
 
 @media (min-width: $desktop-width) {
-  .desc__img3{
+  .desc__img3 {
     width: 165px;
     height: 294px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .desc__feature{
-    display: flex;
-    flex-direction: row;
-    background-color: $gray;
+.desc__feature {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 320px;
+  background-image: url("..//img/iphone3.png");
+  background-repeat: no-repeat;
+  background-position: center 355px;
+  background-size: 157px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .desc__feature {
+    background: url("..//img/bigiphonetablet.png");
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-size: 268px auto;
+    align-items: flex-end;
+    padding-top: 95px;
+    padding-bottom: 43px;
+    width: 620px;
+    margin: 0 auto;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .desc__feature {
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
+    padding-left: 0;
+    padding-top: 0;
+    background: 0 0;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.desc__feature-item {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .desc__feature-item {
+    width: 300px;
+    margin: 0;
+    padding-top: 360px;
+    padding-left: 30px;
+    padding-right: 27px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desc__feature-item:first-child {
+    background-image: url("..//img/phonedesctop1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 292px 302px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desc__feature-item:nth-child(2) {
+    background-image: url("..//img/phonedesctop2.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 292px 302px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desc__feature-item:last-child {
+    background-image: url("..//img/phonedesctop3.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 292px 302px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .desc__feature-wraper:first-child,
+  .desc__feature-wraper:nth-child(2),
+  .desc__feature-wraper:last-child {
+    background-color: $gray;
+    position: relative;
+    padding-top: 59px;
+    top: -120px;
+  }
+}
 
 .desc__title {
   color: #000000;
   font-weight: 700;
   line-height: 24px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -81,27 +164,30 @@
 
 @media (min-width: $tablet-width) {
   .desc__title {
-    padding-top: 20px;
     padding-left: 42px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .desc__title{
+  .desc__title {
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
 .desc__subtitle {
   color: #283645;
   font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
-  margin: 0;
   padding: 0;
   text-align: center;
+  width: 282px;
+  margin: 10px auto 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -118,5 +204,9 @@
     font-size: 18px;
     line-height: 30px;
     color: $blue;
+    width: 240px;
+    margin-top: 22px;
+    padding: 0;
+    text-align: center;
   }
 }
