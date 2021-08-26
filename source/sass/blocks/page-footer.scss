@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 0 auto 30px;
+  margin: 40px auto 40px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    display: flex;
     width: 620px;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px auto 30px;
+    margin: 35px auto 35px;
   }
 }
 
@@ -28,6 +29,7 @@
   width: 150px;
   height: 41px;
   align-self: center;
+  margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,30 +44,31 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 41px;
-  padding-bottom: 56px;
+  text-align: center;
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__social {
     display: flex;
     align-self: flex-start;
-    padding: 0;
+    margin: 0;
   }
 }
 
 .page-footer__copyright {
   width: 150px;
-  align-self: center;
-  min-height: 36px;
-  padding-top: 5px;
-  text-align: center;
-  color: $blue;
+    align-self: center;
+    min-height: 36px;
+    text-align: center;
+    color: $blue;
+    margin-top: 41px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__copyright {
     text-align: right;
+    margin: 0;
   }
 }
 

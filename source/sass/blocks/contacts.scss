@@ -10,6 +10,24 @@
   color: $blue;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__text {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+}
+
 .contacts__wraper {
   display: flex;
   flex-direction: column;
@@ -19,9 +37,52 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wraper {
-    display: grid;
+    margin: 0 auto;
+    width: 575px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__wraper {
+  width: 940px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__item {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item:first-child {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item:nth-child(2) {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item:last-child {
+    order: 2;
+    margin-top: 0;
+  }
+}
+
 
 .contacts__title {
   font-weight: 700;
@@ -52,6 +113,13 @@
   margin-bottom: 24px;
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__subtitle {
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+}
+
 .contacts__svg {
   position: relative;
   top: 39px;
@@ -61,19 +129,36 @@
 .contacts__map {
   width: 100%;
   height: 200px;
+  margin: 0 auto;
+  background-image: url("..//img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   clip-path: polygon(52% 26%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 @media (min-width: $tablet-width) {
   .contacts__map {
+    height: 378px;
+    margin-bottom: 35px;
+    background-image: url("..//img/maptablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
     width: 100%;
-    height: 374px;
+    margin: 0 auto;
+    clip-path: polygon(52% 26%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__map {
+    height: 500px;
     width: 100%;
-    height: 502px;
+    margin-bottom: 75px;
+    background-image: url("..//img/mapdesctop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
   }
 }

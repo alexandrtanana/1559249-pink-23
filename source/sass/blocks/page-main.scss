@@ -13,8 +13,9 @@
 @media (min-width: $tablet-width) {
   .page-main__operating {
     position: absolute;
-    margin-top: 320px;
-    width: 300px;
+    margin-top: 338px;
+    left: -150px;
+    width: 100%;
     display: flex;
     background-color: #1d263100;
   }
@@ -23,10 +24,13 @@
 @media (min-width: $desktop-width) {
   .page-main__operating {
     position: absolute;
-    margin-top: 408px;
-    width: 300px;
-    padding-left: 130px;
+    margin-top: 426px;
+    left: -345px;
   }
+}
+
+.page-main__operating-wrap {
+  position: relative;
 }
 
 .page-main__download {
@@ -110,20 +114,45 @@
 }
 
 .page-main__wraper {
-  width: 320px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-image: url("..//img/phonemobile.png");
-  background-position: left bottom;
-  height: 462px;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url("..//img/phonemobile.png");
+    background-position: left bottom;
+    height: 462px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-main__wraper {
+    background-image: url("..//img/phonetablet.png");
+    height: 100%;
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wraper{
+    background-image: url("..//img/phonedesctop.png");
+    width: 940px;
+    margin: 0 auto;
+    background-size: 1050px auto;
+    background-position: 20px bottom;
+  }
 }
 
 .page-main__wraper-title {
   width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wraper-title {
+    width: 300px;
+  }
 }
 
 .page-main__img {
@@ -165,7 +194,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    left: 68px;
+    left: -150px;
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
@@ -179,9 +208,8 @@
     font-weight: 300;
     font-size: 50px;
     line-height: 68px;
-    padding-left: 120px;
     position: relative;
-    left: 9px;
+    left: -346px;
     top: 112px;
   }
 }

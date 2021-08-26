@@ -11,26 +11,33 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav">
-      <a class="page-header__logo" href="index.html"></a>
-      <button class="page-header__toggle" type="button"><span class="page-header__button">Открыть меню</span></button>
+    <div class="page-header__main">
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
+    <nav class="page-header__nav">
+      <ul class="page-header__nav-list site-list">
+        <li class="page-header__list-item page-header__list-menu">
+          <a class="page-header__logo"></a>
+          <button class="page-header__toggle" type="button"><span class="page-header__button"><svg width="23"
+                height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
+                <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
+              </svg></span></button>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Фотографии</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="#">Конкурс</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="catalog.html">Фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="#">Конкурс</a>
+        </li>
+        <li class="page-header__list-item page-header__list--closed">
+          <a class="page-header__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
         </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="competition">
     <section class="competition__text">
@@ -158,7 +165,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo">
-      <a href="#"><img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40"
+      <a href="index.html"><img class="page-footer__logo" src="img/logotypebluetablet.svg" width="145" height="40"
           alt="логотип пинк"></a>
     </div>
     <div class="page-footer__social">
@@ -172,6 +179,7 @@
           height="34" alt="логотип академии"></a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
