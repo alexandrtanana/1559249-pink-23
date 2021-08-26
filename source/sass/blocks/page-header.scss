@@ -122,9 +122,9 @@
       color: $white;
       opacity: none;
       position: relative;
-     border-style: none;
-     padding: 0;
-     align-self: center;
+      border-style: none;
+      padding: 0;
+      align-self: center;
     }
   }
 }
@@ -162,11 +162,11 @@
 
 .page-header__list-item {
   position: relative;
-    box-sizing: border-box;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    border-top: 1px solid #485461;
-    border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000;
 }
 
 @media (min-width: $desktop-width) {
