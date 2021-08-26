@@ -2,6 +2,13 @@
 $mobile-side-offset: 20px;
 $container-max-width: 940px + 2 * $mobile-side-offset;
 
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$only-mobile-screen: $tablet-width - 1px;
+
+$accent-color: #d22856;
+$accent-dark: #283645;
+
 /* ___ mixins.scss ___ */
 
 @mixin reset-scroll {
