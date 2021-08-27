@@ -11,24 +11,24 @@ $accent-dark: #283645;
 
 /* ___ mixins.scss ___ */
 
-@mixin reset-scroll {
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
+// @mixin reset-scroll {
+//   scrollbar-color: transparent transparent; /* thumb and track color */
+//   scrollbar-width: 0;
+//   -ms-overflow-style: none;
 
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    width: 0;
-  }
+//   &::-webkit-scrollbar {
+//     width: 0;
+//   }
 
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
+//   &::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
 
-  &::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-}
+//   &::-webkit-scrollbar-thumb {
+//     background: transparent;
+//     border: none;
+//   }
+// }
 
 /* ___ Общие стили ___ */
 *,
@@ -79,13 +79,11 @@ img {
 ___ */
 
 .carousel {
-
   &__wrapper {
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
-
-    @include reset-scroll;
+    // @include reset-scroll;
   }
 
   &__slide {
@@ -94,13 +92,26 @@ ___ */
   }
 
   &__dots {
+    margin-bottom: 60px;
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
     display: grid;
     gap: 18px;
     grid-auto-flow: column;
     justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &__dots {
+      margin-bottom: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__dots {
+      display: none;
+      margin-bottom: 58px;
+    }
   }
 
   &__dot {
@@ -122,23 +133,6 @@ ___ */
     text-align: center;
   }
 
-  &__dots {
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &__dots {
-      margin-bottom: 58px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &__dots {
-      display: none;
-      margin-bottom: 58px;
-    }
-  }
-
   @media (max-width: $mobile-width-only) {
     &__background {
       display: none;
@@ -152,7 +146,7 @@ ___ */
   }
 
   @media (min-width: $desktop-width) {
-    &__background{
+    &__background {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -190,10 +184,10 @@ ___ */
     }
   }
 
-    &__blockquote{
-      margin: 0 auto;
-      width:280px;
-    }
+  &__blockquote {
+    margin: 0 auto;
+    width: 280px;
+  }
 
   @media (min-width: $tablet-width) {
     &__blockquote {
@@ -211,7 +205,7 @@ ___ */
 
 /* ___ tariff.scss ___ */
 .tariffs {
-  background-image: url("img/greybackgrounddesctop.png");
+  background-image: url("..//img/greybackgrounddesctop.png");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -227,13 +221,12 @@ ___ */
 
   &__tariff {
     background-color: $accent-dark;
-    color: #fff;
+    color: $white;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
     text-transform: uppercase;
-    color: #ffffff;
     padding: 8px;
     position: relative;
     overflow: hidden;
@@ -241,11 +234,11 @@ ___ */
     scroll-snap-align: start;
 
     &:first-of-type {
-      border-radius: 3px 0px 0px 0px;
+      border-radius: 3 0 0 0;
     }
 
     &:last-of-type {
-      border-radius: 3px 0px 0px 0px;
+      border-radius: 3 0 0 0;
     }
   }
 
@@ -268,12 +261,12 @@ ___ */
 
   &__feature,
   &__value {
-    border: 2px solid #e5e5e5;
+    border: 2px solid $gray;
     height: 45px;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
-    background-color: #fff;
+    background-color: $white;
     color: $accent-dark;
     padding: 4px 16px;
   }

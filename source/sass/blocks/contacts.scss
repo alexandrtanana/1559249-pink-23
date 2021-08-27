@@ -47,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wraper {
-  width: 940px;
+    width: 940px;
     margin: 0 auto;
   }
 }
@@ -140,7 +140,6 @@
 @media (min-width: $tablet-width) {
   .contacts__map {
     height: 378px;
-    margin-bottom: 35px;
     background-image: url("..//img/maptablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -155,7 +154,6 @@
   .contacts__map {
     height: 500px;
     width: 100%;
-    margin-bottom: 75px;
     background-image: url("..//img/mapdesctop.jpg");
     background-position: center;
     background-repeat: no-repeat;

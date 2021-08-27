@@ -98,13 +98,11 @@
   text-transform: uppercase;
 }
 
-.panorama {
-  a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-  }
+.panorama_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
 }
 
 .panorama__desc {
