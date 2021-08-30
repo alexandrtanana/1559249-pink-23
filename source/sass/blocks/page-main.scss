@@ -131,13 +131,20 @@
   }
 }
 
+
 .page-main__wraper-title {
-  width: 280px;
+  width: auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__wraper-title {
-    width: 300px;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wraper-title {
+    width: auto;
   }
 }
 
@@ -186,6 +193,7 @@
     line-height: 48px;
     position: relative;
     top: 103px;
+    width: 300px;
   }
 }
 
@@ -197,6 +205,7 @@
     position: relative;
     left: -346px;
     top: 112px;
+    width: 300px;
   }
 }
 

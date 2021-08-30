@@ -2,33 +2,33 @@
 $mobile-side-offset: 20px;
 $container-max-width: 940px + 2 * $mobile-side-offset;
 
-$tablet-width: 660px;
-$desktop-width: 1200px;
-$only-mobile-screen: $tablet-width - 1px;
+// $tablet-width: 660px;
+// $desktop-width: 1200px;
+// $only-mobile-screen: $tablet-width - 1px;
 
 $accent-color: #d22856;
 $accent-dark: #283645;
 
 /* ___ mixins.scss ___ */
 
-// @mixin reset-scroll {
-//   scrollbar-color: transparent transparent; /* thumb and track color */
-//   scrollbar-width: 0;
-//   -ms-overflow-style: none;
+@mixin reset-scroll {
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
 
-//   &::-webkit-scrollbar {
-//     width: 0;
-//   }
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
-//   &::-webkit-scrollbar-track {
-//     background: transparent;
-//   }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-//   &::-webkit-scrollbar-thumb {
-//     background: transparent;
-//     border: none;
-//   }
-// }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+}
 
 /* ___ Общие стили ___ */
 *,
@@ -83,7 +83,7 @@ ___ */
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
-    // @include reset-scroll;
+    @include reset-scroll;
   }
 
   &__slide {
