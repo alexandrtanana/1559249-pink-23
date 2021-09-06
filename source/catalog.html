@@ -19,7 +19,6 @@
       </div>
       <div class="page-header__nav-wrapper">
         <ul class="page-header__nav-list site-list">
-          </li>
           <li class="page-header__list-item">
             <a class="page-header__list-link" href="index.html">Главная</a>
           </li>
@@ -190,17 +189,22 @@
           <a class="newphoto__img" href="#"><img class="newphoto__photo" src="img/photo7tablet.jpg" width="280"
               height="374" alt="морозная зима"></a>
         </div>
-        <div class="newphoto__editor">
-          <div class="newphoto__editor-tools">
-            <p class="newphoto__button">
-              <button class="newphoto__button-editor" type="button"><img src="img/crop.svg" width="44" height="44"
-                  alt="обрезка фото"></button>
-              <button class="newphoto__button-editor" type="button"><img src="img/fill.svg" width="48" height="43"
-                  alt="заливка"></button>
-              <button class="newphoto__button-editor" type="button"><img src="img/contrast.svg" width="32" height="32"
-                  alt="контраст"></button>
-            </p>
-            <input class="newphoto__range" type="range" min="0" max="100" step="1" value="50">
+        <div class="newphoto__wrap">
+          <div class="newphoto__editor">
+            <div class="newphoto__editor-tools">
+              <div class="newphoto__wraper-button">
+                <input class="newphoto__button-crop" type="radio" name="button" checked>
+                <input class="newphoto__button-fill" type="radio" name="button">
+                <input class="newphoto__button-contrast" type="radio" name="button">
+              </div>
+              <div class="newphoto__wraper-range">
+                <input class="newphoto__range" type="range" min="-100" max="100" value="0" step="1">
+                <input class="newphoto__range newphoto__range-fill" type="range" min="-100" max="100" value="0"
+                  step="1">
+                <input class="newphoto__range newphoto__range-contrast" type="range" min="-100" max="100" value="0"
+                  step="1">
+              </div>
+            </div>
           </div>
           <div class="newphoto__button-input">
             <p>

@@ -83,6 +83,7 @@ ___ */
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
+
     @include reset-scroll;
   }
 
