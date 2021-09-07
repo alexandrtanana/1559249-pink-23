@@ -88,7 +88,6 @@
   .desc__feature {
     flex-direction: row;
     justify-content: space-between;
-    -ms-grid-row-align: stretch;
     align-items: stretch;
     padding-left: 0;
     padding-top: 0;
@@ -141,7 +140,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .desc__feature-wraper:first-child,
   .desc__feature-wraper:nth-child(2),
   .desc__feature-wraper:last-child {

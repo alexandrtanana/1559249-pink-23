@@ -1,10 +1,9 @@
 .page-header {
-  background-color: #283645;
-  color: #ffffff;
   border: none;
-  position: absolute;
   width: 100%;
   z-index: 1;
+  // position: absolute;
+  // background-color: $blue;
 }
 
 @media (min-width: $desktop-width) {
@@ -12,9 +11,22 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    background-color: #0000008a;
+    background-color: #00000044;
     width: 100%;
     box-sizing: border-box;
+  }
+}
+
+.page-header__nav {
+  background-color: #00000044;
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav {
+    width: auto;
+    display: flex;
   }
 }
 
@@ -22,17 +34,13 @@
   margin: 0;
   position: relative;
   left: 20px;
-  width: 74px;
-  height: 23px;
-  background-repeat: no-repeat;
-  background-image: url("..//img/pinklogo.svg");
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    background-image: url("..//img/logotablet.svg");
-    width: 145px;
-    height: 40px;
+
     position: relative;
     left: 20px;
   }
@@ -42,15 +50,9 @@
   .page-header__logo {
     position: relative;
     padding-bottom: 44px;
+    padding-top: 44px;
+    padding-left: 130px;
   }
-}
-
-.page-header__toggle {
-  display: block;
-  font-size: 0;
-  background-color: $blue;
-  background-image: url("img/closemenubtn.svg");
-  border: none;
 }
 
 @media (min-width: $desktop-width) {
@@ -59,26 +61,37 @@
   }
 }
 
-.page-header__button {
-  padding-right: 20px;
-  padding-top: 20px;
-}
-
-@media (max-width: $tablet-width) {
-  .page-header__nav .page-header__list-item:active:visited {
-    display: none;
-  }
+.page-header__nav-list {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__nav {
+  .page-header__nav-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 940px;
+    min-height: 110px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: none;
+    background-color: #00000000;
   }
 }
 
-.page-header__nav-list {
+.page-header__list-link {
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -86,46 +99,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__nav-list {
-    display: flex;
-    width: 940px;
-    margin: 0 auto;
-    min-height: 110px;
-    flex-direction: row;
-    justify-content: space-between;
-    text-transform: none;
-  }
-}
-
-.page-header__nav-list {
-  a {
-    text-decoration: none;
-    color: $white;
-    font-weight: 700;
+  .page-header__list-link {
+    font-weight: 400;
     font-size: 18px;
-    line-height: 32px;
-    inset:0px 1px 0px rgba(255, 255, 255, 0.15);
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__nav-list {
-    a {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 18px;
-      text-transform: none;
-      box-shadow: none;
-      color: $white;
-      opacity: none;
-      position: relative;
-      border-style: none;
-      padding: 0;
-      align-self: center;
-    }
+    line-height: 18px;
+    text-transform: none;
+    box-shadow: none;
+    color: $white;
+    opacity: none;
+    position: relative;
+    border-style: none;
+    padding: 0;
+    align-self: center;
   }
 }
 
@@ -166,7 +151,7 @@
   padding-top: 16px;
   padding-bottom: 15px;
   border-top: 1px solid #485461;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $black;
 }
 
 @media (min-width: $desktop-width) {
@@ -177,7 +162,219 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__list-link{
+  .page-header__list-link {
     margin-left: 79px;
+  }
+}
+
+// Бургер меню
+.page-header__menu {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 66px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  border-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__menu {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__menu {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-header__nav--closed .page-header__toggle {
+    background-image: url("..//img/openmenubtn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00000000;
+    width: 30px;
+    height: 30px;
+    display: block;
+    font-size: 0;
+    border: none;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-header__nav--opened .page-header__toggle {
+    background-image: url("..//img/closemenubtn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00000000;
+    width: 30px;
+    height: 30px;
+    display: block;
+    font-size: 0;
+    border: none;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-header__nav--opened .page-header__list-item {
+    display: block;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-header__nav--closed .page-header__list-item {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__nav--opened .page-header__nav-wrapper {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__nav--opened .page-header__nav-wrapper {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+// Цвет шапки меню
+@media (min-width: $tablet-width) {
+  .page-header .page-header__nav--opened {
+    background-color: $blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header .page-header__nav--opened {
+    background-color: #00000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header .page-header__nav--closed {
+    background-color: #0000005b;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header .page-header__nav--closed {
+    background-color: #00000000;
+  }
+}
+
+// @media (max-width: $tablet-width) {
+//   .page-header .page-header__nav--closed  {
+//     background-color: #00000057;
+//   }
+// }
+
+// .page-header__nav--opened  {
+//     background-color: $blue;
+//   }
+
+// @media (max-width: $tablet-width) {
+//   .page-header .page-header__nav--opened  {
+//     background-color: $blue;
+//   }
+// }
+//
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--opened .page-header__nav-wrapper {
+    display: block;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--closed .page-header__list-item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--closed .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--opened .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--opened .page-header__nav-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__nav--opened {
+  background-color: $blue;
+}
+
+.page-header__nav--nojs .page-header__menu {
+  background-color: $blue;
+  width: inherit;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--nojs .page-header__menu {
+    background-color: #28364500;
+    width: inherit;
+  }
+}
+
+.page-header__nav--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header__nav--nojs {
+  display: block;
+  position: static;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--nojs {
+    display: flex;
+    position: static;
+    min-height: 0;
+  }
+}
+
+// .page-header .page-header__nav-wrapper {
+//   position: absolute;
+// }
+
+.page-header__nav--nojs .page-header__list-item {
+  display: block;
+}
+
+.page-header__nav--nojs .page-header__list-item a {
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav--nojs .page-header__nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

@@ -7,7 +7,6 @@
   min-height: 200px;
   padding-top: 28px;
   padding-bottom: 30px;
-  background-color: #1d2631;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,16 +39,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 49px;
-  margin-bottom: 51px;
-  padding-top: 21px;
-  padding-bottom: 21px;
   text-align: center;
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
   font-weight: bold;
-  box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 38px;
   padding: 15px 0;
@@ -69,14 +63,6 @@
 
 .page-main__android-logo {
   margin-right: 35px;
-}
-
-.page-main__wrap {
-  width: 320px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-position: left bottom;
-  background-size: 258px auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -114,16 +100,16 @@
 }
 
 .page-main__wraper {
-    width: 320px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background-image: url("..//img/phonemobile.png");
-    background-position: left bottom;
-    height: 462px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-image: url("..//img/phonemobile.png");
+  background-position: left bottom;
+  height: 462px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
@@ -136,7 +122,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__wraper{
+  .page-main__wraper {
     background-image: url("..//img/phonedesctop.png");
     width: 940px;
     margin: 0 auto;
@@ -145,13 +131,20 @@
   }
 }
 
+
 .page-main__wraper-title {
-  width: 280px;
+  width: auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__wraper-title {
-    width: 300px;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wraper-title {
+    width: auto;
   }
 }
 
@@ -200,6 +193,7 @@
     line-height: 48px;
     position: relative;
     top: 103px;
+    width: 300px;
   }
 }
 
@@ -211,6 +205,7 @@
     position: relative;
     left: -346px;
     top: 112px;
+    width: 300px;
   }
 }
 

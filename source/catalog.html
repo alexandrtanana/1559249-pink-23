@@ -11,33 +11,29 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__main">
-    </div>
-    <nav class="page-header__nav">
-      <ul class="page-header__nav-list site-list">
-        <li class="page-header__list-item page-header__list-menu">
-          <a class="page-header__logo" href="index.html"></a>
-          <button class="page-header__toggle" type="button"><span class="page-header__button"><svg width="23"
-                height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white" />
-                <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white" />
-              </svg></span></button>
-        </li>
-        <li class="page-header__list-item page-header__list--closed">
-          <a class="page-header__list-link" href="index.html">Главная</a>
-        </li>
-        <li class="page-header__list-item page-header__list--closed">
-          <a class="page-header__list-link" href="#">Фотографии</a>
-        </li>
-        <li class="page-header__list-item page-header__list--closed">
-          <a class="page-header__list-link" href="form.html">Конкурс</a>
-        </li>
-        <li class="page-header__list-item page-header__list--closed">
-          <a class="page-header__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
-        </li>
-      </ul>
+    <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+      <div class="page-header__menu">
+        <a class="page-header__logo" href="index.html"><img src="img/pinklogo.svg" width="74" height="23"
+            alt="логотип сайта пинк"></a>
+        <a class="page-header__toggle"></a>
+      </div>
+      <div class="page-header__nav-wrapper">
+        <ul class="page-header__nav-list site-list">
+          <li class="page-header__list-item">
+            <a class="page-header__list-link" href="index.html">Главная</a>
+          </li>
+          <li class="page-header__list-item">
+            <a class="page-header__list-link" href="#">Фотографии</a>
+          </li>
+          <li class="page-header__list-item">
+            <a class="page-header__list-link" href="form.html">Конкурс</a>
+          </li>
+          <li class="page-header__list-item">
+            <a class="page-header__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    </div>
   </header>
   <main class="galery">
     <div class="galery__wrap">
@@ -49,7 +45,7 @@
       </div>
       <div class="panorama">
         <div class="panorama__img">
-          <a href="#">
+          <a class="panorama_link" href="#">
             <img class="panorama__photo" src="img/panoramatablet.jpg" width="320" height="137" alt="панорама дня"></a>
           <div class="panorama__day">Панорама дня</div>
         </div>
@@ -193,17 +189,22 @@
           <a class="newphoto__img" href="#"><img class="newphoto__photo" src="img/photo7tablet.jpg" width="280"
               height="374" alt="морозная зима"></a>
         </div>
-        <div class="newphoto__editor">
-          <div class="newphoto__editor-tools">
-            <p class="newphoto__button">
-              <button class="newphoto__button-editor" type="button"><img src="img/crop.svg" width="44" height="44"
-                  alt="обрезка фото"></button>
-              <button class="newphoto__button-editor" type="button"><img src="img/fill.svg" width="48" height="43"
-                  alt="заливка"></button>
-              <button class="newphoto__button-editor" type="button"><img src="img/contrast.svg" width="32" height="32"
-                  alt="контраст"></button>
-            </p>
-            <input class="newphoto__range" type="range" min="0" max="100" step="1" value="50">
+        <div class="newphoto__wrap">
+          <div class="newphoto__editor">
+            <div class="newphoto__editor-tools">
+              <div class="newphoto__wraper-button">
+                <input class="newphoto__button-crop" type="radio" name="button" checked>
+                <input class="newphoto__button-fill" type="radio" name="button">
+                <input class="newphoto__button-contrast" type="radio" name="button">
+              </div>
+              <div class="newphoto__wraper-range">
+                <input class="newphoto__range" type="range" min="-100" max="100" value="0" step="1">
+                <input class="newphoto__range newphoto__range-fill" type="range" min="-100" max="100" value="0"
+                  step="1">
+                <input class="newphoto__range newphoto__range-contrast" type="range" min="-100" max="100" value="0"
+                  step="1">
+              </div>
+            </div>
           </div>
           <div class="newphoto__button-input">
             <p>
