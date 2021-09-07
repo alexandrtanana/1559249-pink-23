@@ -204,6 +204,19 @@
   }
 }
 
+.form__checkbox-checkbox {
+  appearance: none;
+  background-image: url("..//img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+
+  &:checked {
+    background-image: url("..//img/checkboxchecksvg.svg");
+  }
+}
+
 .form__checkbox-label {
   font-weight: 400;
   margin-left: 70px;
@@ -484,6 +497,51 @@
 .form__radio-item {
   margin-bottom: 45px;
   color: #283645;
+}
+
+.form__radio-ios {
+  appearance: none;
+  background-image: url("..//img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+
+  &:checked {
+    background-image: url("..//img/radiocheck.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form__radio-android {
+  appearance: none;
+  background-image: url("..//img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+
+  &:checked {
+    background-image: url("..//img/radiocheck.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form__radio-windows {
+  appearance: none;
+  background-image: url("..//img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+
+  &:checked {
+    background-image: url("..//img/radiocheck.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .form__review {

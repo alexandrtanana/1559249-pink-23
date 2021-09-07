@@ -162,6 +162,10 @@
 @media (min-width: $tablet-width) {
   .galery__like-img {
     order: 2;
+
+    &:checked {
+      background-color: $accent;
+    }
   }
 }
 
