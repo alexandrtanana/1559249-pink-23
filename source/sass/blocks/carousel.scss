@@ -1,3 +1,153 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ___ Контейнер-центровщик ___ */
+.container {
+  padding: {
+    right: $mobile-side-offset;
+    left: $mobile-side-offset;
+  }
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  width: 100%;
+  max-width: $container-max-width;
+}
+
+/* ___
+    carousel.scss
+    Слайдер
+___ */
+
+.carousel {
+  .carousel__wrapper {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
+    @include reset-scroll;
+  }
+
+  .carousel__slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .carousel__dots {
+    margin-bottom: 60px;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 18px;
+    grid-auto-flow: column;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    .carousel__dots {
+      margin-bottom: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .carousel__dots {
+      display: none;
+      margin-bottom: 58px;
+    }
+  }
+
+  .carousel__dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: transparentize($blue, 0.7);
+    border-radius: 50%;
+    font-size: 0;
+  }
+
+  .carousel__dot--active {
+    box-shadow: 0 0 0 3px $blue;
+    background-color: transparent;
+    cursor: default;
+  }
+
+  .carousel__title {
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    .carousel__background {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .carousel__background {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .carousel__background {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 72px;
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .carousel__slide {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    .carousel__arrow {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .carousel__arrow {
+      display: none;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
+    .carousel__arrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .carousel__blockquote {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .carousel__blockquote {
+      width: 620px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .carousel__blockquote {
+      width: 700px;
+    }
+  }
+}
+
 .carousel__title {
   color: #000000;
   font-weight: 700;
