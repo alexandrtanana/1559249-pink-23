@@ -1,5 +1,4 @@
 // Colors
-
 $white: #ffffff;
 $accent: #d22856;
 $blue: #283645;
@@ -8,10 +7,13 @@ $black: #000000;
 
 
 // Viewports
-
 $mobile-width-only: 699px;
 // @media (min-width: $mobile-width-only)
 $tablet-width: 700px;
 // @media (min-width: $tablet-width)
 $desktop-width: 1200px;
 // @media (min-width: $desktop-width)
+
+
+$mobile-side-offset: 20px;
+$container-max-width: 940px + 2 * $mobile-side-offset;

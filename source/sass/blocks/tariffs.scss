@@ -1,227 +1,20 @@
-/* ___ Переменные ___ */
-$mobile-side-offset: 20px;
-$container-max-width: 940px + 2 * $mobile-side-offset;
-
-// $tablet-width: 660px;
-// $desktop-width: 1200px;
-// $only-mobile-screen: $tablet-width - 1px;
-
-$accent-color: #d22856;
-$accent-dark: #283645;
-
-/* ___ mixins.scss ___ */
-
-@mixin reset-scroll {
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0;
-  -ms-overflow-style: none;
-
-  &::-webkit-scrollbar {
-    width: 0;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-}
-
-/* ___ Общие стили ___ */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-/* ___ Доступное скрытие ___ */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-/* ___ Контейнер-центровщик ___ */
-.container {
-  padding: {
-    right: $mobile-side-offset;
-    left: $mobile-side-offset;
-  }
-  margin: {
-    right: auto;
-    left: auto;
-  }
-  width: 100%;
-  max-width: $container-max-width;
-}
-
-/* ___
-    carousel.scss
-Слайдер
-___ */
-
-.carousel {
-  &__wrapper {
-    display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-
-    @include reset-scroll;
-  }
-
-  &__slide {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-  }
-
-  &__dots {
-    margin-bottom: 60px;
-    list-style: none;
-    padding: 0;
-    display: grid;
-    gap: 18px;
-    grid-auto-flow: column;
-    justify-content: center;
-  }
-
-  @media (min-width: $tablet-width) {
-    &__dots {
-      margin-bottom: 58px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &__dots {
-      display: none;
-      margin-bottom: 58px;
-    }
-  }
-
-  &__dot {
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: transparentize($accent-dark, 0.7);
-    border-radius: 50%;
-    font-size: 0;
-
-    &--active {
-      box-shadow: 0 0 0 3px $accent-dark;
-      background-color: transparent;
-      cursor: default;
-    }
-  }
-
-  &__title {
-    text-align: center;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    &__background {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &__background {
-      display: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &__background {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-top: 72px;
-      width: 940px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &__slide {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    &__arrow {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &__arrow {
-      display: none;
-    }
-  }
-
-
-  @media (min-width: $desktop-width) {
-    &__arrow {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-
-  &__blockquote {
-    margin: 0 auto;
-    width: 280px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &__blockquote {
-      width: 620px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &__blockquote {
-      width: 700px;
-    }
-  }
-}
-
-
-/* ___ tariff.scss ___ */
 .tariffs {
   background-image: url("..//img/greybackgrounddesctop.png");
   background-repeat: no-repeat;
   background-position: center;
 
-  &__wrapper {
+  .tariffs__wrapper {
     overflow-x: auto;
   }
 
-  &__table {
+  .tariffs__table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
   }
 
-  &__tariff {
-    background-color: $accent-dark;
+  .tariffs__tariff {
+    background-color: $blue;
     color: $white;
     text-align: center;
     font-weight: bold;
@@ -243,13 +36,13 @@ ___ */
     }
   }
 
-  &__price {
+  .tariffs__price {
     font-weight: 300;
     margin: 0;
   }
 
-  &__hit-ribbon {
-    background-color: $accent-color;
+  .tariffs__hit-ribbon {
+    background-color: $accent;
     margin: 0;
     position: absolute;
     top: 0;
@@ -260,27 +53,27 @@ ___ */
     font-size: 14px;
   }
 
-  &__feature,
-  &__value {
+  .tariffs__feature,
+  .tariffs__value {
     border: 2px solid $gray;
     height: 45px;
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
     background-color: $white;
-    color: $accent-dark;
+    color: $blue;
     padding: 4px 16px;
   }
 
-  &__feature {
+  .tariffs__feature {
     text-align: left;
   }
 
-  &__value {
+  .tariffs__value {
     text-align: center;
   }
 
-  &__value-wrapper {
+  .tariffs__value-wrapper {
     display: flex;
     flex: wrap;
     justify-content: center;
@@ -290,13 +83,13 @@ ___ */
   }
 
   @media (min-width: $tablet-width) {
-    &__dots {
+    .tariffs__dots {
       display: none;
     }
   }
 
   @media (max-width: $tablet-width - 1px) {
-    &__wrapper {
+    .tariffs__wrapper {
       display: grid;
       grid-template-columns: 300% $mobile-side-offset; // и after чтобы не съедался отсуп справа
       scroll-padding: $mobile-side-offset;
@@ -308,12 +101,12 @@ ___ */
       }
     }
 
-    &__empty-cell,
-    &__feature {
+    .tariffs__empty-cell,
+    .tariffs__feature {
       display: none;
     }
 
-    &__value-wrapper {
+    .tariffs__value-wrapper {
       justify-content: space-between;
 
       &::before {

@@ -211,7 +211,6 @@
 }
 
 // Ползунок
-
 .newphoto__slider {
   position: relative;
   background: #f4f4f4;
@@ -236,18 +235,6 @@
     width: 288px;
   }
 }
-
-// @media (min-width: $tablet-width) {
-//   .newphoto__line {
-//    width: 280px;
-//    border-bottom: 1px solid #dddfe0;
-//   }
-// }
-
-
-// .newphoto__button-crop:hover {
-//   display: flex;
-// }
 
 .newphoto__range::-webkit-slider-thumb {
   appearance: none;
