@@ -1,32 +1,31 @@
 .competition__text {
-  background-image: url("..//img/backdesktop.jpg");
-  background-size: 200%;
-  // width: 280px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   box-sizing: border-box;
   min-height: 237px;
-}
+  background-image: url("..//img/background.jpg");
+  background-size: cover;
 
-@media (min-width: $desktop-width) {
-  .competition__text {
-    background-size: 200%;
+  @media (min-resolution: $retina) {
+    background-image: url("..//img/background@2x.jpg");
   }
 }
 
 .competition__text-title {
-  padding-top: 120px;
-  padding-bottom: 51px;
+  padding-top: 140px;
+  padding-bottom: 140px;
   color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   margin: 0 auto;
+  width: 228px;
 }
 
 @media (min-width: $tablet-width) {
   .competition__text-title {
-    width: 500px;
+    width: 620px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -34,7 +33,7 @@
 
 @media (min-width: $desktop-width) {
   .competition__text-title {
-    width: 750px;
+    width: 747px;
   }
 }
 

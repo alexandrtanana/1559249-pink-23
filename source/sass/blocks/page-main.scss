@@ -76,16 +76,20 @@
 .page-main__wrap {
   background-color: #283645;
   width: 100%;
-  background-image: url("..//img/backmobile.jpg");
+  background-image: url("..//img/background.jpg");
   background-position: center;
   background-size: cover;
   height: 462px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina) {
+    background-image: url("..//img/background@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-main__wrap {
-    background-image: url("..//img/backtablet.jpg");
+    background-image: url("..//img/background.jpg");
     width: auto;
     height: 729px;
   }
@@ -94,8 +98,14 @@
 @media (min-width: $desktop-width) {
   .page-main__wrap {
     background-image: url("..//img/backdesktop.jpg");
-    width: auto;
     height: 853px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/backdesktop@2x.jpg");
+    }
   }
 }
 
@@ -110,6 +120,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  @media (min-resolution: $retina) {
+    background-image: url("..//img/phonemobile@2x.png");
+    background-size: contain;
+  }
 }
 
 
@@ -118,6 +133,11 @@
     background-image: url("..//img/phonetablet.png");
     height: 100%;
     width: 660px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/phonetablet@2x.png");
+      background-size: contain;
+    }
   }
 }
 
@@ -128,6 +148,11 @@
     margin: 0 auto;
     background-size: 1050px auto;
     background-position: 20px bottom;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/phonedesctop@2x.png");
+      background-size: contain;
+    }
   }
 }
 

@@ -9,7 +9,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    background-color: #00000044;
+    background-color: #00000074;
     width: 100%;
     box-sizing: border-box;
   }
@@ -47,7 +47,7 @@
   .page-header__logo {
     position: relative;
     padding-bottom: 44px;
-    padding-top: 44px;
+    padding-top: 30px;
     padding-left: 130px;
   }
 }
@@ -271,6 +271,7 @@
 @media (min-width: $desktop-width) {
   .page-header .page-header__nav--closed {
     background-color: #00000000;
+    position: relative;
   }
 }
 

@@ -68,6 +68,10 @@
   background-repeat: no-repeat;
   background-position: center 355px;
   background-size: 157px auto;
+
+  @media (min-resolution: $retina) {
+    background-image: url("..//img/iphone3@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -81,6 +85,10 @@
     padding-bottom: 11px;
     width: 620px;
     margin: 0 auto;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/bigiphonetablet@2x.png");
+    }
   }
 }
 
@@ -119,6 +127,10 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 292px 302px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/phonedesctop1@2x.png");
+    }
   }
 }
 
@@ -128,6 +140,10 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 292px 302px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/phonedesctop2@2x.png");
+    }
   }
 }
 
@@ -137,6 +153,10 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 292px 302px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/phonedesctop3@2x.png");
+    }
   }
 }
 

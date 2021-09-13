@@ -14,6 +14,8 @@ $tablet-width: 700px;
 $desktop-width: 1200px;
 // @media (min-width: $desktop-width)
 
+$retina: 2dppx;
+// @media (min-resolution: $retina)
 
 $mobile-side-offset: 20px;
 $container-max-width: 940px + 2 * $mobile-side-offset;
