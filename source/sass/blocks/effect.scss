@@ -34,6 +34,10 @@
     box-sizing: border-box;
     padding-left: 310px;
     padding-top: 36px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/timer@2x.png");
+    }
   }
 }
 
