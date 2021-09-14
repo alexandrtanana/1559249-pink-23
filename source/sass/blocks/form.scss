@@ -85,6 +85,14 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:active {
+    border-color: $accent;
+  }
 }
 
 .form__checkbox {

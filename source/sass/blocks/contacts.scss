@@ -111,6 +111,14 @@
   justify-content: center;
   text-align: center;
   margin-bottom: 24px;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: #28364534;
+  }
 }
 
 @media (min-width: $desktop-width) {

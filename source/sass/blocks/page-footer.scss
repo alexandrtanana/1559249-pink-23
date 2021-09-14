@@ -56,6 +56,18 @@
   }
 }
 
+.copyright__img path {
+  fill: inherit;
+}
+
+.copyright__img:hover {
+  fill: $blue;
+}
+
+.copyright__img:active {
+  fill: $blue;
+}
+
 .page-footer__copyright {
   width: 150px;
   align-self: center;

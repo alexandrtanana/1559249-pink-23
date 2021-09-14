@@ -49,6 +49,16 @@
   padding: 15px 0;
   width: 280px;
   height: 55px;
+
+  &:hover {
+    color: $accent;
+    background-color: $white;
+  }
+
+  &:active {
+    color: #d2285534;
+    background-color: $white;
+  }
 }
 
 .page-main__operating-system {
