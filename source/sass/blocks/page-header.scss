@@ -21,6 +21,25 @@
   width: 100%;
 }
 
+.page-header__logo-mobile path {
+  fill: inherit;
+}
+
+.page-header__logo-mobile:active {
+  fill: #ffffff33;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-tablet path {
+    fill: inherit;
+  }
+
+  .page-header__logo-tablet:active {
+    fill: #ffffff33;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .page-header__nav {
     width: auto;
@@ -28,27 +47,70 @@
   }
 }
 
-.page-header__logo {
-  margin: 0;
-  position: relative;
-  left: 20px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+
+@media (min-width: $desktop-width) {
+  .page-header__stars {
+    position: relative;
+    z-index: 1;
+    top: 2px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__img {
+    position: relative;
+    top: -37px;
+    left: -5px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__img path {
+    fill: inherit;
+  }
+
+  .page-header__img:hover {
+    fill: $accent;
+  }
+
+  .page-header__img:active {
+    fill: #ffffff33;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-header__logo-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__logo-tablet {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__logo {
-    position: relative;
-    left: 20px;
+  .page-header__logo-mobile {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
     position: relative;
-    padding-bottom: 44px;
+    // padding-bottom: 44px;
     padding-top: 30px;
     padding-left: 130px;
+    width: 147px;
   }
 }
 
@@ -93,6 +155,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &:active {
+    color: #d2285533;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -108,6 +178,10 @@
     border-style: none;
     padding: 0;
     align-self: center;
+
+    &:active {
+      color: #ffffff33;
+    }
   }
 }
 
@@ -161,6 +235,13 @@
 @media (min-width: $desktop-width) {
   .page-header__list-link {
     margin-left: 79px;
+
+    &:visited::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $white;
+    }
   }
 }
 
@@ -203,6 +284,14 @@
     font-size: 0;
     border: none;
     z-index: 9999;
+
+    &:hover {
+      background-image: url("..//img/togleopenhover.svg");
+    }
+
+    &:active {
+      background-image: url("..//img/togleopenactive.svg");
+    }
   }
 }
 
@@ -218,6 +307,14 @@
     font-size: 0;
     border: none;
     z-index: 9999;
+
+    &:hover {
+      background-image: url("..//img/togleclosedhover.svg");
+    }
+
+    &:active {
+      background-image: url("..//img/togleclosedactive.svg");
+    }
   }
 }
 
