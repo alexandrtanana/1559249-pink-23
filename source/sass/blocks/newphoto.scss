@@ -1,6 +1,5 @@
 .newphoto {
-  padding-bottom: 54px;
-  margin-bottom: 40px;
+  padding-bottom: 9px;
   background-color: #f2f2f2;
 }
 
@@ -23,6 +22,7 @@
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
+    padding-bottom: 39px;
   }
 }
 
@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 49px;
   }
 }
 
@@ -99,6 +100,9 @@
   width: 44px;
   height: 44px;
   appearance: none;
+  position: relative;
+  top: -3px;
+  left: -1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -128,7 +132,10 @@
   width: 44px;
   height: 44px;
   appearance: none;
+  position: relative;
+  top: -2px;
 }
+
 
 @media (min-width: $tablet-width) {
   .newphoto__button-fill {
@@ -152,12 +159,17 @@
 .newphoto__wraper-button {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .newphoto__wraper-button {
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 2px;
+    padding-bottom: 0;
+    left: -17px;
   }
 }
 
@@ -189,6 +201,9 @@
   width: 44px;
   height: 44px;
   appearance: none;
+  position: relative;
+  top: -3px;
+  left: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -197,6 +212,8 @@
     width: 22px;
     height: 22px;
     background-position: center;
+    position: relative;
+    left: 1px;
   }
 }
 
@@ -228,6 +245,22 @@
   appearance: none;
   outline: none;
   border-radius: 2px;
+  margin-bottom: 57px;
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__range {
+    position: relative;
+    left: 3px;
+    top: 34px;
+    width: 194px;
+    height: 2px;
+    background: $blue;
+    appearance: none;
+    outline: none;
+    border-radius: 2px;
+    margin-bottom: 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -251,7 +284,13 @@
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__img {
+    padding-top: 56px;
+  }
 }
 
 .newphoto__add {
@@ -260,13 +299,20 @@
   border-radius: 30px;
   color: #d22856;
   text-align: center;
-  padding-left: 91px;
+  padding-left: 89px;
   padding-right: 90px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__add {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -286,11 +332,19 @@
   color: #d22856;
   padding-left: 104px;
   padding-right: 103px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .newphoto__cancellation {
+    padding-left: 92px;
+    padding-right: 92px;
+    margin-top: 9px;
+  }
 }
 
 @media (min-width: $desktop-width) {

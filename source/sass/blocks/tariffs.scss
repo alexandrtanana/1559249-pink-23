@@ -1,12 +1,45 @@
 .tariffs {
+  padding-top: 61px;
+  background-image: url("..//img/greybackground.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+
   .tariffs__wrapper {
     overflow-x: auto;
   }
+
+  @media (min-width: $tablet-width) {
+    .tariffs__wrapper {
+      padding-left: 40px;
+      padding-right: 38px;
+    }
+  }
+
 
   .tariffs__table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .tariffs__table {
+      margin-bottom: 100px;
+    }
+  }
+
+  .tariffs__empty-cell {
+    padding-left: 10px;
   }
 
   .tariffs__tariff {
@@ -15,9 +48,10 @@
     text-align: center;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 30px;
     text-transform: uppercase;
-    padding: 8px;
+    padding-bottom: 26px;
+    padding-top: 11px;
     position: relative;
     overflow: hidden;
     border: 2px solid #e5e5e5;
@@ -32,9 +66,35 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    .tariffs__tariff {
+      padding: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tariffs__tariff {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
   .tariffs__price {
     font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    .tariffs__price {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   .tariffs__hit-ribbon {
@@ -58,11 +118,39 @@
     line-height: 30px;
     background-color: $white;
     color: $blue;
-    padding: 4px 16px;
+    padding: 6px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .tariffs__feature,
+    .tariffs__value {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tariffs__feature,
+    .tariffs__value {
+      padding: 6px;
+    }
   }
 
   .tariffs__feature {
     text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    .tariffs__feature {
+      padding-left: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tariffs__feature {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 30px;
+    }
   }
 
   .tariffs__value {
@@ -76,6 +164,11 @@
     align-items: center;
 
     text-transform: uppercase;
+  }
+
+  .tariffs__dots {
+    margin-bottom: 88px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $tablet-width) {
