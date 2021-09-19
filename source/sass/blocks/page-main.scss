@@ -23,8 +23,8 @@
 @media (min-width: $desktop-width) {
   .page-main__operating {
     position: absolute;
-    margin-top: 426px;
-    left: -345px;
+    margin-top: 409px;
+    left: -310px;
   }
 }
 
@@ -43,12 +43,15 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 19px;
   padding: 15px 0;
-  width: 280px;
-  height: 55px;
+  width: 279px;
+  height: 54px;
+  font-size: 18px;
+  position: relative;
+  top: 1px;
 
   &:hover {
     color: $accent;
@@ -61,18 +64,74 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__download {
+    width: 300px;
+    margin-top: 13px;
+    position: relative;
+    right: 11px;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__download {
+    width: 300px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 18px;
+    margin-bottom: 44px;
+  }
+}
+
 .page-main__operating-system {
   margin-bottom: 20px;
   text-align: center;
   font-size: 0;
+  margin-top: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__operating-system {
+    margin-top: 23px;
+    position: relative;
+    right: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__operating-system {
+    margin-bottom: 37px;
+  }
 }
 
 .page-main__apple-logo {
   margin-right: 35px;
+  position: relative;
+  top: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__apple-logo {
+    position: relative;
+    top: 1px;
+  }
 }
 
 .page-main__android-logo {
   margin-right: 35px;
+}
+
+.page-main__windows-logo {
+  position: relative;
+  top: -1px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__windows-logo {
+    position: relative;
+    top: -2px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -157,11 +216,10 @@
     width: 940px;
     margin: 0 auto;
     background-size: 1050px auto;
-    background-position: 20px bottom;
+    background-position: 16px bottom;
 
     @media (min-resolution: $retina) {
       background-image: url("..//img/phonedesctop@2x.png");
-      background-size: contain;
     }
   }
 }
@@ -210,24 +268,26 @@
 
 .page-main__title {
   font-weight: 300;
-  color: $white;
+  color: #ffffff;
   font-size: 24px;
   line-height: 29px;
   margin: 0;
   text-align: center;
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 34px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    left: -150px;
+    left: -160px;
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
     position: relative;
-    top: 103px;
-    width: 300px;
+    top: 114px;
+    width: 247px;
   }
 }
 
@@ -237,8 +297,8 @@
     font-size: 50px;
     line-height: 68px;
     position: relative;
-    left: -346px;
-    top: 112px;
+    left: -320px;
+    top: 119px;
     width: 300px;
   }
 }
@@ -247,10 +307,11 @@
   color: $white;
   line-height: 24px;
   text-align: center;
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 300;
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -258,5 +319,10 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
+    width: 300px;
+    text-align: center;
+    margin-top: 17px;
+    position: relative;
+    right: 11px;
   }
 }

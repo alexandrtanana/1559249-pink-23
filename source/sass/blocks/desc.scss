@@ -1,18 +1,23 @@
 .desc {
-  margin-top: 123px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("..//img/greybackgrounddesctop.png");
   width: auto;
   position: relative;
   z-index: -2;
   height: auto;
+  padding-top: 64px;
+  background-image: url("..//img/greybackground.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -38px;
 }
 
 @media (min-width: $tablet-width) {
   .desc {
-    margin-top: 47px;
+    padding-top: 72px;
+    margin-top: -6px;
   }
 }
 
@@ -20,7 +25,6 @@
   .desc {
     display: flex;
     flex-direction: column-reverse;
-    background-size: 100%;
   }
 }
 
@@ -63,28 +67,32 @@
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 320px;
+  padding-bottom: 344px;
   background-image: url("..//img/iphone3.png");
   background-repeat: no-repeat;
-  background-position: center 355px;
+  background-position: center 484px;
   background-size: 157px auto;
 
-  @media (min-resolution: $retina) {
-    background-image: url("..//img/iphone3@2x.png");
+  @media (min-width: $mobile-width-only) {
+    @media (min-resolution: $retina) {
+      background-image: url("..//img/iphone3@2x.png");
+    }
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .desc__feature {
     background: url("..//img/bigiphonetablet.png");
     background-repeat: no-repeat;
-    background-position: left 25px;
     background-size: 268px auto;
     align-items: flex-end;
-    padding-top: 95px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 80px;
     width: 620px;
-    margin: 0 auto;
+    margin: -38px auto;
+    position: relative;
+    top: -22px;
 
     @media (min-resolution: $retina) {
       background-image: url("..//img/bigiphonetablet@2x.png");
@@ -99,15 +107,27 @@
     align-items: stretch;
     padding-left: 0;
     padding-top: 0;
+    padding-bottom: 0;
     background: 0 0;
     width: 940px;
     margin: 0 auto;
+    position: relative;
+    top: -91px;
   }
 }
 
 .desc__feature-item {
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 33px;
+  position: relative;
+  top: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .desc__feature-item {
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -126,7 +146,7 @@
     background-image: url("..//img/phonedesctop1.png");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 292px 302px;
+    background-size: 313px 376px;
 
     @media (min-resolution: $retina) {
       background-image: url("..//img/phonedesctop1@2x.png");
@@ -139,7 +159,7 @@
     background-image: url("..//img/phonedesctop2.png");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 292px 302px;
+    background-size: 313px 376px;
 
     @media (min-resolution: $retina) {
       background-image: url("..//img/phonedesctop2@2x.png");
@@ -152,7 +172,7 @@
     background-image: url("..//img/phonedesctop3.png");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 292px 302px;
+    background-size: 313px 376px;
 
     @media (min-resolution: $retina) {
       background-image: url("..//img/phonedesctop3@2x.png");
@@ -167,7 +187,7 @@
     background-color: $gray;
     position: relative;
     padding-top: 59px;
-    top: -120px;
+    top: -64px;
   }
 }
 
@@ -193,8 +213,9 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-    padding-left: 0;
+    padding-left: 2px;
     text-align: center;
+    width: 234px;
   }
 }
 
@@ -205,15 +226,16 @@
   line-height: 24px;
   padding: 0;
   text-align: center;
-  width: 282px;
+  width: 280px;
   margin: 10px auto 0;
 }
 
 @media (min-width: $tablet-width) {
   .desc__subtitle {
-    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 42px;
     text-align: left;
+    width: 310px;
   }
 }
 
