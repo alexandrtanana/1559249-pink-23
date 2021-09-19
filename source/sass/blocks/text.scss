@@ -5,15 +5,21 @@
 
 @media (min-width: $tablet-width) {
   .text {
-    margin-top: 58px;
+    margin-top: 48px;
     margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text {
+    margin-top: 61px;
   }
 }
 
 .text__desc {
   color: $blue;
-  width: 320px;
-  margin: 0 auto 26px;
+  width: 280px;
+  margin: 0 auto 29px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;

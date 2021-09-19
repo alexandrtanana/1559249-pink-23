@@ -13,12 +13,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .panorama {
-    margin-top: 8px;
-  }
-}
-
 .panorama__img {
   position: relative;
   width: 320px;
@@ -57,13 +51,29 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .panorama__day {
+    position: relative;
+    top: -456px;
+    right: -520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__day {
+    position: relative;
+    top: -458px;
+    right: -929px;
+  }
+}
+
 .panorama__text {
   position: relative;
   box-sizing: border-box;
   width: 280px;
   align-self: center;
   padding-left: 18px;
-  padding-top: 15px;
+  padding-top: 18px;
   padding-bottom: 20px;
   background-color: $gray;
 }
@@ -92,10 +102,44 @@
   color: $blue;
 }
 
+@media (min-width: $tablet-width) {
+  .panorama__name {
+    position: relative;
+    top: -2px;
+    left: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__name {
+    position: relative;
+    top: -2px;
+    left: 0;
+  }
+}
+
 .panorama__text-time {
   font-size: 12px;
-  font-weight: lighter;
+  font-weight: 400;
   text-transform: uppercase;
+  position: relative;
+  left: -2px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__text-time {
+    position: relative;
+    top: -2px;
+    left: -2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__text-time {
+    position: relative;
+    top: -2px;
+    left: 1px;
+  }
 }
 
 .panorama__img-link {
@@ -110,6 +154,24 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  width: 253px;
+  position: relative;
+  left: 3px;
+  top: -2px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__desc {
+    width: 520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__desc {
+    width: 875px;
+    position: relative;
+    left: 0;
+  }
 }
 
 .panorama__text-name {
@@ -122,13 +184,24 @@
   display: flex;
   align-items: center;
   border: none;
+  position: relative;
+  left: -7px;
+  top: 1px;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__like {
     position: absolute;
-    top: 25px;
-    right: 29px;
+    top: 23px;
+    left: 465px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__like {
+    position: absolute;
+    top: 23px;
+    left: 784px;
   }
 }
 
