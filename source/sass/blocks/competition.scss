@@ -13,8 +13,8 @@
 }
 
 .competition__text-title {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 94px;
+  padding-bottom: 44px;
   color: $white;
   font-weight: 300;
   font-size: 24px;
@@ -27,31 +27,35 @@
   .competition__text-title {
     width: 620px;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 68px;
+    padding-top: 177px;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .competition__text-title {
     width: 747px;
+    padding-top: 169px;
+    padding-bottom: 89px;
   }
 }
 
 .competition__text-desc {
-  padding-top: 64px;
-  padding-bottom: 55px;
+  padding-top: 44px;
+  padding-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
   .competition__text-desc {
-    padding-top: 90px;
-    padding-bottom: 77px;
+    padding-top: 92px;
+    padding-bottom: 73px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .competition__text-desc {
-    padding-bottom: 82px;
+    padding-bottom: 75px;
   }
 }
 

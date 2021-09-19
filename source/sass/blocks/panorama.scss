@@ -13,12 +13,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .panorama {
-    margin-top: 8px;
-  }
-}
-
 .panorama__img {
   position: relative;
   width: 320px;
@@ -60,8 +54,16 @@
 @media (min-width: $tablet-width) {
   .panorama__day {
     position: relative;
-    top: -457px;
+    top: -456px;
     right: -520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__day {
+    position: relative;
+    top: -458px;
+    right: -929px;
   }
 }
 
@@ -108,12 +110,28 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .panorama__name {
+    position: relative;
+    top: -2px;
+    left: 0;
+  }
+}
+
 .panorama__text-time {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
   left: -2px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__text-time {
+    position: relative;
+    top: -2px;
+    left: -2px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -148,6 +166,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .panorama__desc {
+    width: 875px;
+    position: relative;
+    left: 0;
+  }
+}
+
 .panorama__text-name {
   padding-left: 20px;
   padding-top: 25px;
@@ -168,6 +194,14 @@
     position: absolute;
     top: 23px;
     left: 465px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__like {
+    position: absolute;
+    top: 23px;
+    left: 784px;
   }
 }
 
