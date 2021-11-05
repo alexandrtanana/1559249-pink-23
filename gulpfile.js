@@ -5,8 +5,8 @@ const sass = require("gulp-sass")(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const gulpStylelint = require('gulp-stylelint');
-const w3cjs = require('gulp-w3cjs');
+const gulpStylelint = require("gulp-stylelint");
+const w3cjs = require("gulp-w3cjs");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
@@ -21,12 +21,12 @@ const del = require("del");
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-      .pipe(gulpStylelint({
-        reporters: [
-          {formatter: 'string', console: true}
-        ]
-      }))
-  .pipe(plumber())
+  .pipe(gulpStylelint({
+    reporters: [
+      {formatter: 'string', console: true}
+    ]
+  }))
+  // .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
@@ -42,7 +42,7 @@ const styles = () => {
   .pipe(sync.stream());
 }
 const cssLint = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/**/*.scss")
     .pipe(gulpStylelint({
       reporters: [
         {formatter: 'string', console: true}
@@ -78,7 +78,7 @@ const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(terser())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("source/js"))
     .pipe(sync.stream());
 }
 
@@ -130,6 +130,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/css/*.css",
+    "source/js/script.min.js",
     "source/*.ico",
     "source/img/**/*",
     "!source/img/icons/*.svg",
