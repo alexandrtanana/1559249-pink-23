@@ -27,7 +27,7 @@ jobs:
         run: npm test
 
       - name: Building
-        run: npm run build
+        run: gulp build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
